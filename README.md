@@ -39,9 +39,11 @@ I initially wanted to get on board with the project after semester 1, where I wa
 
 # Tutors Pre-Project 
 
-## Starting Out
+## Initial User Experience
 
-Before I started to contribute to the Tutors project, 
+The initial frontend of Tutors when I started on the project was built with Svelte and used the (TODO) UI library.
+
+![Initial UX of Tutors](images/IMG_20210603_212416.jpg)
 
 # State of the Art
 

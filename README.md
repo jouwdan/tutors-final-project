@@ -16,9 +16,9 @@ Department of Computing & Mathematics, SETU Waterford
 
 ## Background
 
-
-
 The Tutors Open Source Project is a collection of components & services supporting the creation of transformative learning experiences using open web standards. The project supports 3 complementary perspectives - the Learner, Educator & Developer experiences. It was originally developed by Eamonn de Leastar, beginning around 10 years ago as a python application with similar principles as it has today - ingesting markdown content to generate either a static site or a zip file which could be uploaded as a lab to Moodle. It has evolved over the past decade, keeping to the same principles, but has been adapted to use modern technologies.
+
+I initially approached Eamonn De Leastar, SETU Lecturer & the developer on Tutors, on the 3rd June 2021 with my intentions of setting up Tutors on my local machine in order to learn the codebase and update the user experience for the learner. Since then I have actively worked on the project. Although it is unorthodox, I organically onboarded to the Tutors project early on in the course, and as a result grew as a developer because of Tutors and built something that I am proud of.
 
 ## Objectives
 
@@ -35,12 +35,13 @@ audience.
 
 ## Motivation
 
-I initially wanted to get on board with the project after semester 1, where I was a user of Tutors daily. I found the user experience of the software was lacking - it needed to be explained to a learner instead of being self explanatory. I wanted to get my hands on the codebase to modernise the frontend design, selfishly, to make Tutors easier to navigate for myself for the duration of the course. Over time, I gained an acute appreciation for Tutors and became actively involved in the project - which is why I chosen this as my final project. Although it is unorthodox, I organically onboarded to the Tutors project early on in the course, and as a result grew as a developer because of Tutors and built something that I am proud of.
+I initially wanted to get on board with the project after semester 1, where I was a user of Tutors daily. I found the user experience of the software was lacking - it needed to be explained to a learner instead of being self explanatory. I wanted to get my hands on the codebase to modernise the frontend design, selfishly, to make Tutors easier to navigate for myself for the duration of the course. Over time, I gained an acute appreciation for Tutors and became actively involved in the project - which is why I chosen this as my final project. 
 
-Background & motivation
-3 perspectives (LX, EX, DX)
-Legacy UX
-Legacy Build
+# Tutors Pre-Project 
+
+## Starting Out
+
+Before I started to contribute to the Tutors project, 
 
 # State of the Art
 

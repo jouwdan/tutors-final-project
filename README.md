@@ -27,9 +27,7 @@ audience.
 
 ## Motivation
 
-I initially wanted to get on board with the project after semester 1, where I was a user of Tutors daily. I found the user experience of the software hard to get used to, and wanted to get my hands on the codebase to modernise the frontend design, in order to help me navigate Tutors easier myself for the duration of the course. Over time, I gained an acute appreciation for Tutors. It's open source 
-
-Focus on your work areas with short ‘mission stmt’ around UX, Build Systems, Open Source Infrastructure, Dissemination
+I initially wanted to get on board with the project after semester 1, where I was a user of Tutors daily. I found the user experience of the software was lacking - it needed to be explained to a learner instead of being self explanatory. I wanted to get my hands on the codebase to modernise the frontend design, selfishly, to make Tutors easier to navigate for myself for the duration of the course. Over time, I gained an acute appreciation for Tutors and became actively involved in the project - which is why I chosen this as my final project. Although it is unorthodox, I organically onboarded to the Tutors project early on in the course, and as a result grew as a developer because of Tutors and built something that I am proud of.
 
 # The Tutors Project
 

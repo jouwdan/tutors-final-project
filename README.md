@@ -41,9 +41,15 @@ I initially wanted to get on board with the project after semester 1, where I wa
 
 ## Initial User Experience
 
-The initial frontend of Tutors when I started on the project was built with Svelte and used the (TODO) UI library.
+The initial frontend of Tutors when I started the course was built with Aurelia and used UI Kit for the design (see fig. 1 below), but by the time I had started on the project it had been upgraded to be built with Svelte and TailwindCSS (see fig. 2 below).
 
-![Initial UX of Tutors](images/IMG_20210603_212416.jpg)
+![Tutors Aurelia](images/tutors-aurelia.png)
+
+Figure 1 - Tutors Aurelia
+
+![Tutors Svelte](images/tutors-svelte.png)
+
+Figure 2 - Tutors Svelte
 
 # State of the Art
 

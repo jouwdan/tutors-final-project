@@ -57,11 +57,15 @@ As a student early on in the course, I was not very familiar with frontend devel
 
 ## Implementing DaisyUI
 
-After ensuring all aspects of Tutors would be covered by DaisyUI's component library, I decided to go ahead and start implementing DaisyUI in Tutors. The initial wireframe, see Fig. 3, was built using TailwindCSS & DaisyUI using Stackblitz, an online code editor. The code for this can be found [here](https://stackblitz.com/edit/daisyui-svelte-vite-cfhqdw?file=src/App.svelte).
+After ensuring all aspects of Tutors would be covered by DaisyUI's component library, I decided to go ahead and start implementing DaisyUI in Tutors. The initial wireframe was built using TailwindCSS & DaisyUI using Stackblitz, an online code editor. The code for this can be found [here](https://stackblitz.com/edit/daisyui-svelte-vite-cfhqdw?file=src/App.svelte).
 
 ![Tutors wireframe with DaisyUI](images/tutors-daisyui-wireframe.png)
 
 Figure 3 - Tutors early wireframe with DaisyUI
+
+![Tutors mobile responsive wireframe with DaisyUI](images/tutors-daisyui-wireframe-mobile.png)
+
+Figure 4 - Tutors early wireframe - mobile responsiveness
 
 # State of the Art
 

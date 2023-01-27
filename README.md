@@ -37,11 +37,11 @@ audience.
 
 I initially wanted to get on board with the project after semester 1, where I was a user of Tutors daily. I found the user experience of the software was lacking - it needed to be explained to a learner instead of being self explanatory. I wanted to get my hands on the codebase to modernise the frontend design, selfishly, to make Tutors easier to navigate for myself for the duration of the course. Over time, I gained an acute appreciation for Tutors and became actively involved in the project - which is why I chosen this as my final project. 
 
-# Tutors Pre-Project 
+# Getting on board
 
-## Initial User Experience
+## Initial Technologies & User Experience
 
-The initial frontend of Tutors when I started the course was built with Aurelia and used UI Kit for the design (see fig. 1 below), but by the time I had started on the project it had been upgraded to be built with Svelte and TailwindCSS (see fig. 2 below).
+The initial frontend of Tutors when I started the course was built with Aurelia and used UI Kit for the design (see fig. 1). By the time I had started working on Tutors it had been upgraded to be built with Svelte and TailwindCSS (see fig. 2).
 
 ![Tutors Aurelia](images/tutors-aurelia.png)
 
@@ -50,6 +50,18 @@ Figure 1 - Tutors Aurelia
 ![Tutors Svelte](images/tutors-svelte.png)
 
 Figure 2 - Tutors Svelte
+
+## Initial Setup & Research
+
+As a student early on in the course, I was not very familiar with frontend development. I spend multiple evenings getting used to the codebase - learning to use Git to get the code, learning to run the code on my local machine & learning my way around the codebase to figure out what does what. I then decided to research the tech stack being used, Svelte & TailwindCSS, and put out feelers to see what UI libraries were out there that would work with this tech stack that would provide a more compelling user experience. This was when I came across [Daisy UI](https://daisyui.com), an open source UI component library built on top of TailwindCSS that provided component classes that simplifies the building of a User Interface.
+
+## Implementing DaisyUI
+
+After ensuring all aspects of Tutors would be covered by DaisyUI's component library, I decided to go ahead and start implementing DaisyUI in Tutors. The initial wireframe, see Fig. 3, was built using TailwindCSS & DaisyUI using Stackblitz, an online code editor. The code for this can be found [here](https://stackblitz.com/edit/daisyui-svelte-vite-cfhqdw?file=src/App.svelte).
+
+![Tutors wireframe with DaisyUI](images/tutors-daisyui-wireframe.png)
+
+Figure 3 - Tutors early wireframe with DaisyUI
 
 # State of the Art
 

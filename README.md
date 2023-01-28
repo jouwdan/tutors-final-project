@@ -10,7 +10,25 @@ Department of Computing & Mathematics, SETU Waterford
 
 # Table of Contents
 
-[toc]
+- [The Tutors Project](#the-tutors-project)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+  - [Background](#background)
+  - [Objectives](#objectives)
+  - [Motivation](#motivation)
+- [Getting on board](#getting-on-board)
+  - [Initial Technologies \& User Experience](#initial-technologies--user-experience)
+  - [Initial Setup \& Research](#initial-setup--research)
+  - [Implementing DaisyUI](#implementing-daisyui)
+- [Tutors Tech Team](#tutors-tech-team)
+  - [Red Hat Onboarding](#red-hat-onboarding)
+- [State of the Art](#state-of-the-art)
+- [Tutors Architecture](#tutors-architecture)
+- [The Tutors Monorepo](#the-tutors-monorepo)
+- [The Tutors Design System](#the-tutors-design-system)
+- [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
+- [Conclusion + Further work](#conclusion--further-work)
+
 
 # Introduction
 

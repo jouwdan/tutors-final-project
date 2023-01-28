@@ -59,6 +59,8 @@ As a student early on in the course, I was not very familiar with frontend devel
 
 After ensuring all aspects of Tutors would be covered by DaisyUI's component library, I decided to go ahead and start implementing DaisyUI in Tutors. The initial wireframe was built using TailwindCSS & DaisyUI using Stackblitz, an online code editor. The code for this can be found [here](https://stackblitz.com/edit/daisyui-svelte-vite-cfhqdw?file=src/App.svelte).
 
+During the implementation of DaisyUI I experimented with the colour styles, implemented the [theme-switch](https://github.com/saadeghi/theme-change) for dark mode & changing themes and the [iconify](https://icon-sets.iconify.design) package for icons. In below figures 3 - 7 I have provided work in progress screenshots of this implementation.
+
 ![Tutors wireframe with DaisyUI](images/tutors-daisyui-wireframe.png)
 
 Figure 3 - Tutors early wireframe with DaisyUI
@@ -66,6 +68,18 @@ Figure 3 - Tutors early wireframe with DaisyUI
 ![Tutors mobile responsive wireframe with DaisyUI](images/tutors-daisyui-wireframe-mobile.png)
 
 Figure 4 - Tutors early wireframe - mobile responsiveness
+
+![Early work on progress of implementing DaisyUI in Tutors](images/tutors-daisyui-early-wip.png)
+
+Figure 5 - Early work in progress implementing DaisyUI in Tutors
+
+![Early work on progress of implementing DaisyUI in Tutors](images/tutors-daisyui-early-wip-2.png)
+
+Figure 6 - Mid work in progress implementing DaisyUI in Tutors
+
+![Early work on progress of implementing DaisyUI in Tutors](images/tutors-daisyui-late-wip.png)
+
+Figure 7 - Late work in progress implementing DaisyUI in Tutors
 
 # State of the Art
 

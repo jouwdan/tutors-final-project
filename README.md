@@ -18,7 +18,7 @@ Department of Computing & Mathematics, SETU Waterford
 
 The Tutors Open Source Project is a collection of components & services supporting the creation of transformative learning experiences using open web standards. The project supports 3 complementary perspectives - the Learner, Educator & Developer experiences. It was originally developed by Eamonn de Leastar, beginning around 10 years ago as a python application with similar principles as it has today - ingesting markdown content to generate either a static site or a zip file which could be uploaded as a lab to Moodle. It has evolved over the past decade, keeping to the same principles, but has been adapted to use modern technologies.
 
-I initially approached Eamonn De Leastar, SETU Lecturer & the developer on Tutors, on the 3rd June 2021 with my intentions of setting up Tutors on my local machine in order to learn the codebase and update the user experience for the learner. Since then I have actively worked on the project. Although it is unorthodox, I organically onboarded to the Tutors project early on in the course, and as a result grew as a developer because of Tutors and built something that I am proud of.
+In the summer of 2021, on the 3rd of June, I approached Eamonn De Leastar, a SETU lecturer and the developer of Tutors, with the intention of setting up the Tutors software on my local machine. My goal was to familiarize myself with the codebase and improve the user experience for learners. From that point on, I actively participated in the project, working on it consistently. Although it is unorthodox, I organically onboarded to the Tutors project early on in the course, and as a result grew as a developer because of Tutors and built something that I am proud of.
 
 ## Objectives
 
@@ -35,7 +35,7 @@ audience.
 
 ## Motivation
 
-I initially wanted to get on board with the project after semester 1, where I was a user of Tutors daily. I found the user experience of the software was lacking - it needed to be explained to a learner instead of being self explanatory. I wanted to get my hands on the codebase to modernise the frontend design, selfishly, to make Tutors easier to navigate for myself for the duration of the course. Over time, I gained an acute appreciation for Tutors and became actively involved in the project - which is why I chosen this as my final project. 
+In the first semester of my studies, I became a frequent user of Tutors, an educational software. As I used the software on a daily basis, I noticed that the user experience was lacking. Specifically, I found that the software did not have a self-explanatory interface and required users to seek explanations in order to navigate it. This realization motivated me to want to get involved with the project and work on the codebase in order to modernize the frontend design, with the goal of making Tutors more user-friendly for myself and others during the course of my studies. As I began to delve deeper into the project, I developed an acute appreciation for Tutors and became actively engaged in its development. This experience ultimately led me to choose Tutors as the subject of my final project.
 
 # Getting on board
 
@@ -53,11 +53,11 @@ Figure 2 - Tutors Svelte
 
 ## Initial Setup & Research
 
-As a student early on in the course, I was not very familiar with frontend development. I spend multiple evenings getting used to the codebase - learning to use Git to get the code, learning to run the code on my local machine & learning my way around the codebase to figure out what does what. I then decided to research the tech stack being used, Svelte & TailwindCSS, and put out feelers to see what UI libraries were out there that would work with this tech stack that would provide a more compelling user experience. This was when I came across [Daisy UI](https://daisyui.com), an open source UI component library built on top of TailwindCSS that provided component classes that simplifies the building of a User Interface.
+As a student early in my course of study, I had limited experience with frontend development. In order to familiarize myself with the codebase of the Tutors project, I dedicated multiple evenings to learning various tools and technologies such as Git, running code on a local machine, and navigating the codebase to understand its various components. I then conducted research on the tech stack being used, which included Svelte and TailwindCSS, and explored various UI libraries that could potentially improve the user experience when used in conjunction with these technologies. It was during this research that I discovered [Daisy UI](https://daisyui.com), an open-source UI component library built on top of TailwindCSS that provides a simplified approach to building User Interfaces through the use of pre-defined component classes.
 
 ## Implementing DaisyUI
 
-After ensuring all aspects of Tutors would be covered by DaisyUI's component library, I decided to go ahead and start implementing DaisyUI in Tutors. The initial wireframe was built using TailwindCSS & DaisyUI using Stackblitz, an online code editor. The code for this can be found [here](https://stackblitz.com/edit/daisyui-svelte-vite-cfhqdw?file=src/App.svelte).
+After confirming that DaisyUI's component library would provide comprehensive coverage for all components needed in Tutors, I proceeded to implement the library in the project. The initial wireframe was created using a combination of TailwindCSS and DaisyUI via Stackblitz, an online code editor. The code for this stage of the project can be accessed [here](https://stackblitz.com/edit/daisyui-svelte-vite-cfhqdw?file=src/App.svelte).
 
 During the implementation of DaisyUI I experimented with the colour styles, implemented the [theme-switch](https://github.com/saadeghi/theme-change) for dark mode & changing themes and the [iconify](https://icon-sets.iconify.design) package for icons. In below figures 3 - 7 I have provided work in progress screenshots of this implementation.
 
@@ -85,7 +85,7 @@ Figure 7 - Late work in progress implementing DaisyUI in Tutors
 
 ## Red Hat Onboarding
 
-In August 2021, after a successful build & release of Tutors using DaisyUI, Eamonn approached me asking if I would like to join the Tutors 'tech team'. Red Hat had agreed to commit resources for further development of Tutors, appointing a project manager & 2 engineers to work on Tutors 1 day a week, with a weekly meeting to chat about progress on the project. I was, of course, thrilled to be part of the team and contribute further to the UX of Tutors.
+In August 2021, following the successful build and release of Tutors incorporating DaisyUI, Eamonn De Leastar, the developer of Tutors, approached me with an invitation to join the Tutors technical team. At this point, Red Hat had agreed to provide resources for further development of Tutors, including the appointment of a project manager and two engineers to work on Tutors one day a week, with regular meetings to discuss progress on the project. I was excited to have the opportunity to continue contributing to the user experience of Tutors as part of this team.
 
 # State of the Art
 

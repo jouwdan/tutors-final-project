@@ -81,6 +81,12 @@ Figure 6 - Mid work in progress implementing DaisyUI in Tutors
 
 Figure 7 - Late work in progress implementing DaisyUI in Tutors
 
+# Tutors Tech Team
+
+## Red Hat Onboarding
+
+In August 2021, after a successful build & release of Tutors using DaisyUI, Eamonn approached me asking if I would like to join the Tutors 'tech team'. Red Hat had agreed to commit resources for further development of Tutors, appointing a project manager & 2 engineers to work on Tutors 1 day a week, with a weekly meeting to chat about progress on the project. I was, of course, thrilled to be part of the team and contribute further to the UX of Tutors.
+
 # State of the Art
 
 UX Design Systems & CSS Frameworks

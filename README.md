@@ -22,6 +22,8 @@ Department of Computing & Mathematics, SETU Waterford
   - [Implementing DaisyUI](#implementing-daisyui)
 - [Tutors Tech Team](#tutors-tech-team)
   - [Red Hat Onboarding](#red-hat-onboarding)
+  - [Working with the Tutors Tech Team](#working-with-the-tutors-tech-team)
+  - [A new Tutors domain \& branding](#a-new-tutors-domain--branding)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
 - [The Tutors Monorepo](#the-tutors-monorepo)
@@ -104,6 +106,24 @@ Figure 7 - Late work in progress implementing DaisyUI in Tutors
 ## Red Hat Onboarding
 
 In August 2021, following the successful build and release of Tutors incorporating DaisyUI, Eamonn De Leastar, the developer of Tutors, approached me with an invitation to join the Tutors technical team. At this point, Red Hat had agreed to provide resources for further development of Tutors, including the appointment of a project manager and two engineers to work on Tutors one day a week, with regular meetings to discuss progress on the project. I was excited to have the opportunity to continue contributing to the user experience of Tutors as part of this team.
+
+## Working with the Tutors Tech Team
+
+As part of the Tutors technical team, I worked on the following tasks:
+
+- Creation of new 'Tutors' and 'Tutors Dark' theme with accessible colour schemes
+- Creation of a dyslexia-friendly theme using the Open Dyslexic font and an easier to read colour scheme
+- Minor UI improvements to the Tutors interface such as coloured borders on cards, better mobile responsiveness and iconography changes
+
+## A new Tutors domain & branding
+
+In addition to the work I did on the Tutors codebase, I also worked on the creation of a new domain for Tutors, [tutors.dev](https://tutors.dev). The domain was set up to be used alongside, and later replace, the existing Tutors instance on a netlify subdomain. This was done in order to provide a more user-friendly URL for learners to access Tutors and provide a more accessible sole location for the project.
+
+I also worked on a rebrand of tutors with a new, custom logo I designed in Adobe Illustrator (see fig. 8). The logo was designed to be simple, modern and memorable, and to be used in conjunction with the new domain name.
+
+![Tutors logo](images/tutors-logo.png)
+
+Figure 8 - Tutors logo
 
 # State of the Art
 

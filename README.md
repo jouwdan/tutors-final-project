@@ -29,6 +29,7 @@ Department of Computing & Mathematics, SETU Waterford
   - [Turborepo](#turborepo)
   - [The Tutors Design System](#the-tutors-design-system)
 - [Hacktoberfest 2022](#hacktoberfest-2022)
+- [GDG Glasgow 2022](#gdg-glasgow-2022)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
 - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
@@ -144,6 +145,10 @@ In April 2022 I had the opportunity to visit the Red Hat office in Waterford to 
 ## The Tutors Design System
 
 # Hacktoberfest 2022
+
+# GDG Glasgow 2022
+
+November 2022 - talk about tutors at GDG Glasgow
 
 # State of the Art
 

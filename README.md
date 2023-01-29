@@ -27,7 +27,7 @@ Department of Computing & Mathematics, SETU Waterford
   - [Meeting Red Hat](#meeting-red-hat)
 - [The Tutors Monorepo](#the-tutors-monorepo)
   - [Turborepo](#turborepo)
-  - [The Tutors Desing System](#the-tutors-desing-system)
+  - [The Tutors Design System](#the-tutors-design-system)
 - [Hacktoberfest 2022](#hacktoberfest-2022)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
@@ -141,7 +141,7 @@ In April 2022 I had the opportunity to visit the Red Hat office in Waterford to 
 
 ## Turborepo
 
-## The Tutors Desing System
+## The Tutors Design System
 
 # Hacktoberfest 2022
 

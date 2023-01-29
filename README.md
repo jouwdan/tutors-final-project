@@ -24,9 +24,12 @@ Department of Computing & Mathematics, SETU Waterford
   - [Red Hat Onboarding](#red-hat-onboarding)
   - [Working with the Tutors Tech Team](#working-with-the-tutors-tech-team)
   - [A new Tutors domain \& branding](#a-new-tutors-domain--branding)
+  - [Meeting Red Hat](#meeting-red-hat)
+- [The Tutors Monorepo](#the-tutors-monorepo)
+- [Hacktoberfest 2022](#hacktoberfest-2022)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
-- [The Tutors Monorepo](#the-tutors-monorepo)
+- [The Tutors Monorepo](#the-tutors-monorepo-1)
 - [The Tutors Design System](#the-tutors-design-system)
 - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
 - [Conclusion + Further work](#conclusion--further-work)
@@ -113,17 +116,30 @@ As part of the Tutors technical team, I worked on the following tasks:
 
 - Creation of new 'Tutors' and 'Tutors Dark' theme with accessible colour schemes
 - Creation of a dyslexia-friendly theme using the Open Dyslexic font and an easier to read colour scheme
+- Implementation of the 'presence' feature and design a dropdown menu for the user's profile & show online status and number of users online
 - Minor UI improvements to the Tutors interface such as coloured borders on cards, better mobile responsiveness and iconography changes
+
+![Preview of the initial implementation of presence](images/tutors-presence-initial.png)
+
+Figure 8 - Preview of the initial implementation of presence
 
 ## A new Tutors domain & branding
 
 In addition to the work I did on the Tutors codebase, I also worked on the creation of a new domain for Tutors, [tutors.dev](https://tutors.dev). The domain was set up to be used alongside, and later replace, the existing Tutors instance on a netlify subdomain. This was done in order to provide a more user-friendly URL for learners to access Tutors and provide a more accessible sole location for the project.
 
-I also worked on a rebrand of tutors with a new, custom logo I designed in Adobe Illustrator (see fig. 8). The logo was designed to be simple, modern and memorable, and to be used in conjunction with the new domain name.
+I also worked on a rebrand of tutors with a new, custom logo I designed in Adobe Illustrator (see fig. 9). The logo was designed to be simple, modern and memorable, and to be used in conjunction with the new domain name.
 
 ![Tutors logo](images/tutors-logo.png)
 
-Figure 8 - Tutors logo
+Figure 9 - Tutors logo
+
+## Meeting Red Hat
+
+In April 2022 I had the opportunity to visit the Red Hat office in Waterford to attend a meeting with the Tutors technical team. During this meeting, we discussed the progress made on the project and the future of Tutors. The meeting was a great opportunity to meet the other members of the team and to discuss the project in person. I presented the UI changes made along with the new tutors logo & domain. I also presented the new themes I had created for Tutors, including the dyslexia-friendly theme.
+
+# The Tutors Monorepo
+
+# Hacktoberfest 2022
 
 # State of the Art
 

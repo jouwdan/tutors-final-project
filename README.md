@@ -26,11 +26,11 @@ Department of Computing & Mathematics, SETU Waterford
   - [A new Tutors domain \& branding](#a-new-tutors-domain--branding)
   - [Meeting Red Hat](#meeting-red-hat)
 - [The Tutors Monorepo](#the-tutors-monorepo)
+  - [Turborepo](#turborepo)
+  - [The Tutors Desing System](#the-tutors-desing-system)
 - [Hacktoberfest 2022](#hacktoberfest-2022)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
-- [The Tutors Monorepo](#the-tutors-monorepo-1)
-- [The Tutors Design System](#the-tutors-design-system)
 - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
 - [Conclusion + Further work](#conclusion--further-work)
 
@@ -139,6 +139,10 @@ In April 2022 I had the opportunity to visit the Red Hat office in Waterford to 
 
 # The Tutors Monorepo
 
+## Turborepo
+
+## The Tutors Desing System
+
 # Hacktoberfest 2022
 
 # State of the Art
@@ -151,14 +155,6 @@ Open Source Patterns & infrastructure
 # Tutors Architecture
 
 Articulate the core of the system as presented on the Slides
-
-# The Tutors Monorepo
-
-TODO
-
-# The Tutors Design System
-
-TODO
 
 # The Tutors Open Source Infrastructure
 

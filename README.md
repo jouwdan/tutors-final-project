@@ -182,6 +182,21 @@ Eamonn taken the liberty of doing the migration of the current designed Tutors C
 
 ## An updated monorepo structure
 
+In order to facilitate the new version of Tutors, we decided to update the structure of the monorepo. The following was the updated folder structure that we decided on:
+
+- `apps` - this contains all the front end applications in the monorepo
+  - `course` - the course reader application built in SvelteKit
+  - `home` - the home page of the Tutors project
+  - `time` - the tutors time application built in SvelteKit
+- `cli` - this contains all the command line applications in the monorepo
+  - `tutors-gen` - a new generation tool for emitting json output of courses
+  - `tutors-html` - the old html emitter for courses to output a static html website
+  - `tutors-json` - the old json emitter for courses to output a json file
+- `packages` - this contains all the reusable components of the monorepo
+  - `tutors-lib` - the core library for the Tutors project
+  - `tutors-reader-lib` - the core library for the Tutors Course Reader
+  - `tutors-ui` - the design system for the Tutors project
+
 # State of the Art
 
 UX Design Systems & CSS Frameworks

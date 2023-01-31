@@ -31,6 +31,8 @@ Department of Computing & Mathematics, SETU Waterford
   - [The Tutors Design System](#the-tutors-design-system)
 - [Hacktoberfest 2022](#hacktoberfest-2022)
 - [GDG Glasgow 2022](#gdg-glasgow-2022)
+  - [SvelteKit](#sveltekit)
+  - [An updated monorepo structure](#an-updated-monorepo-structure)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
 - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
@@ -165,6 +167,20 @@ Alongside the monorepo, I decided to put time into building out a design system 
 November 2022 - talk about tutors at GDG Glasgow
 
 # SvelteKit & Skeleton
+
+After the success we had during Hacktoberfest 2022, and with the looming new cohort of students coming in January to the HDip course, we decided to move ahead with building the next generation of Tutors. This was a complete rewrite of the Tutors project, using the latest technologies and best practices. The new version of Tutors was to be built using [SvelteKit](https://kit.svelte.dev/), a framework for building web applications using [Svelte](https://svelte.dev/), which is what the previous version of Tutors was built upon. This worked out very timely, as SvelteKit version 1.0 was released when we were starting to work on the new version of Tutors. This meant that we knew we were using a stable, production-ready and well supported framework for the new version of Tutors.
+
+## SvelteKit
+
+Due to my experience with Svelte, I was very excited to work on the new version of Tutors using SvelteKit. I had been following the development of SvelteKit for a while and was very excited to see it released. I had also been following the development of [Skeleton](https://skeleton.dev), a SvelteKit focused UI library. It was clear that SvelteKit was going to be a great fit for the new version of Tutors, being built on top of Svelte, and providing a lot of important new features, such as server-side rendering and a built in file-based routing system. It also provides a lot of flexibility in terms of how the application was structured, which allowed us to create a structure which suited the Tutors Project's needs.
+
+Eamonn taken the liberty of doing the migration of the current designed Tutors Course Reader to SvelteKit. This was a great opportunity for me to get familiar with SvelteKit and to learn how to use it. I also got the opportunity to work on the new Tutors Course Reader design, which was to be done in Skeleton, and migrate more of the course reader into components in the tutors-ui library.
+
+## Skeleton & tutors-ui components
+
+
+
+## An updated monorepo structure
 
 # State of the Art
 

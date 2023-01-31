@@ -27,6 +27,7 @@ Department of Computing & Mathematics, SETU Waterford
   - [Meeting Red Hat](#meeting-red-hat)
 - [The Tutors Monorepo](#the-tutors-monorepo)
   - [Turborepo](#turborepo)
+  - [Creating the Tutors Monorepo](#creating-the-tutors-monorepo)
   - [The Tutors Design System](#the-tutors-design-system)
 - [Hacktoberfest 2022](#hacktoberfest-2022)
 - [GDG Glasgow 2022](#gdg-glasgow-2022)
@@ -34,7 +35,6 @@ Department of Computing & Mathematics, SETU Waterford
 - [Tutors Architecture](#tutors-architecture)
 - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
 - [Conclusion + Further work](#conclusion--further-work)
-
 
 # Introduction
 
@@ -48,14 +48,10 @@ In the summer of 2021, on the 3rd of June, I approached Eamonn De Leastar, a SET
 
 My objectives for this project were as follows:
 
-1. Create a more engaging learner experience, with a fresh, modern interface &
-improved user experience.
-2. Improve the developer experience by creating a monorepo and tidying up the
-codebase.
+1. Create a more engaging learner experience, with a fresh, modern interface & improved user experience.
+2. Improve the developer experience by creating a monorepo and tidying up the codebase.
 3. Open up the project to contributions from the open source developer community.
-4. Bring exposure to the Tutors Open Source Project by presenting it to a wider
-audience.
-
+4. Bring exposure to the Tutors Open Source Project by presenting it to a wider audience.
 
 ## Motivation
 
@@ -118,7 +114,7 @@ As part of the Tutors technical team, I worked on the following tasks:
 - Creation of new 'Tutors' and 'Tutors Dark' theme with accessible colour schemes
 - Creation of a dyslexia-friendly theme using the Open Dyslexic font and an easier to read colour scheme
 - Implementation of the 'presence' feature and design a dropdown menu for the user's profile & show online status and number of users online
-- Minor UI improvements to the Tutors interface such as coloured borders on cards, better mobile responsiveness and iconography changes
+- Minor UI improvements to the Tutors interface such as a new menu bar style, coloured borders on cards, better mobile responsiveness and iconography changes
 
 ![Preview of the initial implementation of presence](images/tutors-presence-initial.png)
 
@@ -126,7 +122,7 @@ Figure 8 - Preview of the initial implementation of presence
 
 ## A new Tutors domain & branding
 
-In addition to the work I did on the Tutors codebase, I also worked on the creation of a new domain for Tutors, [tutors.dev](https://tutors.dev). The domain was set up to be used alongside, and later replace, the existing Tutors instance on a netlify subdomain. This was done in order to provide a more user-friendly URL for learners to access Tutors and provide a more accessible sole location for the project.
+In addition to the work I did on the Tutors codebase, I also worked on the creation of a new domain for Tutors, [tutors.dev](https://tutors.dev). The domain was set up to be used alongside, and later replace, the existing Tutors instance on a netlify subdomain. This was done in order to provide a more user-friendly URL for learners to access Tutors and provide a more accessible sole location for the project, with subdomains for each component of the project.
 
 I also worked on a rebrand of tutors with a new, custom logo I designed in Adobe Illustrator (see fig. 9). The logo was designed to be simple, modern and memorable, and to be used in conjunction with the new domain name.
 
@@ -140,15 +136,35 @@ In April 2022 I had the opportunity to visit the Red Hat office in Waterford to 
 
 # The Tutors Monorepo
 
+My next task was to create a monorepo for the Tutors project. This was done to create a single repository which developers can work in on all parts of the Tutors Open Source Project, instead of requiring them to pull multiple repositories to make changes. This provided a more streamlined development experience for contributors to the project. After a lot of research and consideration, I decided that the monorepo would be made using [Turborepo](https://turbo.build), a tool for managing monorepos.
+
 ## Turborepo
 
+Turborepo is a tool for managing monorepos. It is a command line tool which allows developers to create a monorepo using a single command. The reason I decided to proceed with Turborepo over other monorepo tools such as [Lerna](https://lerna.js.org/) and [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) is that is is built by a well-backed company (Vercel) and is actively maintained. It is very well documented and provides a lot of features out of the box, such as the ability to run scripts across multiple packages in the monorepo, and the ability to run scripts in parallel. It also provides a lot of flexibility in terms of how the monorepo is structured, which allowed be to to create a monorepo which suited the Tutors Project's needs.
+
+## Creating the Tutors Monorepo
+
+Before starting to create the monorepo, I had to decide on the structure of the monorepo. After considering this with Eamonn, we decided to structure the monorepo in the following way:
+
+The root of the monorepo would contain the following folders:
+
+- `apps` - this would contain all of the command line applications in the monorepo
+- `components` - this would contain the reusable components of the monorepo
+- `sites` - this would contain the frontend websites of the monorepo
+
+This structure would allow us to create a monorepo which would be easy to navigate and would allow us to easily add new applications and components to the monorepo in the future. We wanted to get the monorepo up and running in a timely manner, to attract developers to the project during the Hacktoberfest 2022 event and to make sure that the monorepo was easy to navigate and understand for the new contributors that would come on board to the project.
+
 ## The Tutors Design System
+
+Alongside the monorepo, I decided to put time into building out a design system for the Tutors project. This was done to provide a consistent user experience across all of the Tutors applications and to make it easier for developers to contribute to the project. Thus, the `tutors-ui` package was created. In order to fill out this package with components, I taken an [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) approach to the design system. This approach involved breaking down the design system into smaller components, which could then be combined to create more complex components. This approach allowed for a more modular design system, which can be easily extended and modified in the future.
 
 # Hacktoberfest 2022
 
 # GDG Glasgow 2022
 
 November 2022 - talk about tutors at GDG Glasgow
+
+# SvelteKit & Skeleton
 
 # State of the Art
 
@@ -166,4 +182,3 @@ Articulate the core of the system as presented on the Slides
 TODO
 
 # Conclusion + Further work
-

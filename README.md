@@ -31,6 +31,7 @@ Department of Computing & Mathematics, SETU Waterford
   - [The Tutors Design System](#the-tutors-design-system)
 - [Hacktoberfest 2022](#hacktoberfest-2022)
 - [GDG Glasgow 2022](#gdg-glasgow-2022)
+- [SvelteKit \& Skeleton](#sveltekit--skeleton)
   - [SvelteKit](#sveltekit)
   - [An updated monorepo structure](#an-updated-monorepo-structure)
 - [State of the Art](#state-of-the-art)
@@ -170,7 +171,7 @@ Alongside the monorepo, I decided to put time into building out a design system 
 
 November 2022 - talk about tutors at GDG Glasgow
 
-# SvelteKit & Skeleton
+# SvelteKit & Skeleton
 
 After the success we had during Hacktoberfest 2022, and with the looming new cohort of students coming in January to the HDip course, we decided to move ahead with building the next generation of Tutors. This was a complete rewrite of the Tutors project, using the latest technologies and best practices. The new version of Tutors was to be built using [SvelteKit](https://kit.svelte.dev/), a framework for building web applications using [Svelte](https://svelte.dev/), which is what the previous version of Tutors was built upon. This worked out very timely, as SvelteKit version 1.0 was released when we were starting to work on the new version of Tutors. This meant that we knew we were using a stable, production-ready and well supported framework for the new version of Tutors.
 

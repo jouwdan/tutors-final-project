@@ -175,7 +175,7 @@ Come the end of September 2022, the Tutors repo was ready for participants to co
 
 While attending NodeConf EU 2022, I met Patty - one of the organisers of DevFest at Google Developer Group Glasgow. She invited me to speak at GDG Glasgow in November 2022, which I delivered in a remote capacity. I was very excited to speak at GDG Glasgow about my experience working on the Tutors project and talk about the architecture of the project.
 
-In preparation for this talk, I sat down with Eamonn and we discussed the format of the talk and how it would be delivered. We decided that the talk would be a 45 minute deep dive, with 10-15 minutes for questions at the end. We also decided that the talk would be delivered remotely, as I was unable to attend in person. The talk was delivered via livestream to the GDG Glasgow YouTube channel.
+In preparation for this talk, I sat down with Eamonn and we discussed the format of the talk and how it would be delivered. We decided that the talk would be a 45 minute deep dive, with 10-15 minutes for questions at the end. We also decided that the talk would be delivered remotely, as I was unable to attend in person. The talk was delivered via livestream to the GDG Glasgow YouTube channel. The recording of the livestream from this talk can be found [here](https://www.youtube.com/watch?v=9j25w4Zrucg).
 
 November 2022 - talk about tutors at GDG Glasgow
 

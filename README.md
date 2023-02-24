@@ -165,9 +165,17 @@ This structure would allow us to create a monorepo which would be easy to naviga
 
 Alongside the monorepo, I decided to put time into building out a design system for the Tutors project. This was done to provide a consistent user experience across all of the Tutors applications and to make it easier for developers to contribute to the project. Thus, the `tutors-ui` package was created. In order to fill out this package with components, I taken an [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) approach to the design system. This approach involved breaking down the design system into smaller components, which could then be combined to create more complex components. This approach allowed for a more modular design system, which can be easily extended and modified in the future.
 
+In order to display the components of the design system, I created a [Storybook instance](https://ui.tutors.dev) for the `tutors-ui` package. I initially looked into alternatives to Storybook, and came across Vitebook - but this ended up being depracated and stopped being maintained after I started working with it, so I settled on Storybook as it is a leader in this space it made sense to go with it as it is well established.
+
 # Hacktoberfest 2022
 
+Come the end of September 2022, the Tutors repo was ready for participants to come on board during Hacktoberfest, an event which attracts ans encourages developers to work on Open Source projects, with companies giving out free swag for participants. It was an ideal opportunity to get the word out about the Tutors project and to attract new contributors to the project. I worked with Eamonn to create a list of issues for contributors to work on during Hacktoberfest. These issues were a mix of bug fixes, feature requests and documentation improvements.
+
 # GDG Glasgow 2022
+
+While attending NodeConf EU 2022, I met Patty - one of the organisers of DevFest at Google Developer Group Glasgow. She invited me to speak at GDG Glasgow in November 2022, which I delivered in a remote capacity. I was very excited to speak at GDG Glasgow about my experience working on the Tutors project and talk about the architecture of the project.
+
+In preparation for this talk, I sat down with Eamonn and we discussed the format of the talk and how it would be delivered. We decided that the talk would be a 45 minute deep dive, with 10-15 minutes for questions at the end. We also decided that the talk would be delivered remotely, as I was unable to attend in person. The talk was delivered via livestream to the GDG Glasgow YouTube channel.
 
 November 2022 - talk about tutors at GDG Glasgow
 

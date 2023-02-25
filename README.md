@@ -36,6 +36,7 @@ Department of Computing & Mathematics, SETU Waterford
 - [The Next Generation of Tutors](#the-next-generation-of-tutors)
   - [SvelteKit \& Skeleton](#sveltekit--skeleton)
   - [SvelteKit](#sveltekit)
+  - [Skeleton, Storybook \& tutors-ui components](#skeleton-storybook--tutors-ui-components)
   - [An updated monorepo structure](#an-updated-monorepo-structure)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
@@ -198,7 +199,7 @@ Due to my experience with Svelte, I was very excited to work on the new version 
 
 Eamonn taken the liberty of doing the migration of the current designed Tutors Course Reader to SvelteKit. This was a great opportunity for me to get familiar with SvelteKit and to learn how to use it. I also got the opportunity to work on the new Tutors Course Reader design, which was to be done in Skeleton, and migrate the components of the course reader into the tutors-ui library.
 
-## Skeleton, Storybook & tutors-ui components
+## Skeleton, Storybook & tutors-ui components
 
 Once the Sveltekit version of Tutors was built, I took to work on the new Tutors Course Reader design and, in turn, create the `tutors-ui` library. This was done in Skeleton, a UI library built specifically for SvelteKit. Skeleton is a UI library which is built on top of TailwindCSS, and provides a lot of components which can be used to build out a SvelteKit application. It also provides a lot of flexibility in terms of how the application is structured, allowing for a lot of customisation. It was much less opinionated than other UI libraries, such as [DaisyUI](https://daisyui.com/), which was a big plus for me as we needed something we could tailor to our needs more.
 

@@ -25,12 +25,14 @@ Department of Computing & Mathematics, SETU Waterford
   - [Working with the Tutors Tech Team](#working-with-the-tutors-tech-team)
   - [A new Tutors domain \& branding](#a-new-tutors-domain--branding)
   - [Meeting Red Hat](#meeting-red-hat)
+  - [Netlify Open Source License](#netlify-open-source-license)
 - [The Tutors Monorepo](#the-tutors-monorepo)
   - [Turborepo](#turborepo)
   - [Creating the Tutors Monorepo](#creating-the-tutors-monorepo)
   - [The Tutors Design System](#the-tutors-design-system)
-- [Hacktoberfest 2022](#hacktoberfest-2022)
-- [GDG Glasgow 2022](#gdg-glasgow-2022)
+- [Developer Events](#developer-events)
+  - [Hacktoberfest 2022](#hacktoberfest-2022)
+  - [GDG Glasgow 2022](#gdg-glasgow-2022)
 - [SvelteKit \& Skeleton](#sveltekit--skeleton)
   - [SvelteKit](#sveltekit)
   - [An updated monorepo structure](#an-updated-monorepo-structure)
@@ -137,7 +139,7 @@ Figure 9 - Tutors logo
 
 In April 2022 I had the opportunity to visit the Red Hat office in Waterford to attend a meeting with the Tutors technical team. During this meeting, we discussed the progress made on the project and the future of Tutors. The meeting was a great opportunity to meet the other members of the team and to discuss the project in person. I presented the UI changes made along with the new tutors logo & domain. I also presented the new themes I had created for Tutors, including the dyslexia-friendly theme. During the meeting, we also got the opportunity to do a [10-for-10](https://openpracticelibrary.com/practice/10-for-10/) brainstorming workshop. This was a great opportunity to discuss the future of Tutors and to get feedback from the team on the project.
 
-## Netlify Open Source License
+## Netlify Open Source License
 
 Wirh the new domain and branding in place, I worked with Eamonn to apply for a Netlify Open Source License. This license provided Tutors with a free Netlify account, which allows us to host the project on Netlify and to use additional Netlify's features such as multiple concurrent builds, a larger bandwidth allocation, multiple user access & continuous deployment. This was a great opportunity to provide Tutors with a more reliable hosting solution and to provide the project with a more professional look.
 
@@ -163,13 +165,16 @@ This structure would allow us to create a monorepo which would be easy to naviga
 
 ## The Tutors Design System
 
-Alongside the monorepo, I decided to put time into building out a design system for the Tutors project. This was done to provide a consistent user experience across all of the Tutors applications and to make it easier for developers to contribute to the project. Thus, the `tutors-ui` package was created. In order to fill out this package with components, I taken an [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) approach to the design system. This approach involved breaking down the design system into smaller components, which could then be combined to create more complex components. This approach allowed for a more modular design system, which can be easily extended and modified in the future.
+Alongside the monorepo, I decided to put time into building out a design system for the Tutors project. This was done to provide a consistent user experience across all of the Tutors applications and to make it easier for developers to contribute to the project. In order to fill out this package with components, I taken an [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) approach to the design system. This approach involved breaking down the design system into smaller components, which could then be combined to create more complex components. This approach allowed for a more modular design system, which can be easily extended and modified in the future.
 
-# Hacktoberfest 2022
+Initially, this was built in the `lib` folder of the course reader application, but later was formed into it's own package in the monorepo. This was done to make it easier for developers to access the design system, allowing multiple applications to use it's components, and to make it easier to maintain the design system in the future.
+
+# Developer Events
+## Hacktoberfest 2022
 
 Come the end of September 2022, the Tutors repo was ready for participants to come on board during Hacktoberfest, an event which attracts and encourages developers to work on Open Source projects, with companies giving out free swag for participants. It was an ideal opportunity to get the word out about the Tutors project and to attract new contributors to the project. I worked with Eamonn to create a list of issues for contributors to work on during Hacktoberfest. These issues were a mix of bug fixes, feature requests and documentation improvements.
 
-# GDG Glasgow 2022
+## GDG Glasgow 2022
 
 While attending NodeConf EU 2022, I met Patty - one of the organisers of DevFest at Google Developer Group Glasgow. She invited me to speak at GDG Glasgow in November 2022, which I delivered in a remote capacity. I was very excited to speak at GDG Glasgow about my experience working on the Tutors project and talk about the architecture of the project.
 
@@ -185,12 +190,13 @@ After the success we had during Hacktoberfest 2022, and with the looming new coh
 
 Due to my experience with Svelte, I was very excited to work on the new version of Tutors using SvelteKit. I had been following the development of SvelteKit for a while and was very excited to see it released. I had also been following the development of [Skeleton](https://skeleton.dev), a SvelteKit focused UI library. It was clear that SvelteKit was going to be a great fit for the new version of Tutors, being built on top of Svelte, and providing a lot of important new features, such as server-side rendering and a built in file-based routing system. It also provides a lot of flexibility in terms of how the application was structured, which allowed us to create a structure which suited the Tutors Project's needs.
 
-Eamonn taken the liberty of doing the migration of the current designed Tutors Course Reader to SvelteKit. This was a great opportunity for me to get familiar with SvelteKit and to learn how to use it. I also got the opportunity to work on the new Tutors Course Reader design, which was to be done in Skeleton, and migrate more of the course reader into components in the tutors-ui library.
+Eamonn taken the liberty of doing the migration of the current designed Tutors Course Reader to SvelteKit. This was a great opportunity for me to get familiar with SvelteKit and to learn how to use it. I also got the opportunity to work on the new Tutors Course Reader design, which was to be done in Skeleton, and migrate the components of the course reader into the tutors-ui library.
 
-## Skeleton & tutors-ui components
+## Skeleton, Storybook & tutors-ui components
 
-The next job was to migrate the tutors-ui package to use Skeleton. 
-In order to display the components of the design system, I created a [Storybook instance](https://ui.tutors.dev) for the `tutors-ui` package. I initially looked into alternatives to Storybook, and came across Vitebook - but this ended up being depracated and stopped being maintained after I started working with it, so I settled on Storybook as it is a leader in this space it made sense to go with it as it is well established.
+Once the Sveltekit version of Tutors was built, I took to work on the new Tutors Course Reader design and, in turn, create the `tutors-ui` library. This was done in Skeleton, a UI library built specifically for SvelteKit. Skeleton is a UI library which is built on top of TailwindCSS, and provides a lot of components which can be used to build out a SvelteKit application. It also provides a lot of flexibility in terms of how the application is structured, allowing for a lot of customisation. It was much less opinionated than other UI libraries, such as [DaisyUI](https://daisyui.com/), which was a big plus for me as we needed something we could tailor to our needs more.
+
+In order to display the components of the design system, I created a [Storybook instance](https://ui.tutors.dev) for the `tutors-ui` library. I initially looked into alternatives to Storybook, and came across Vitebook - but this ended up being depracated and stopped being maintained after I started working with it, so I settled on Storybook as it is a leader in this space it made sense to go with a well established solution.
 
 ## An updated monorepo structure
 

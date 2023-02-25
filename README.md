@@ -33,7 +33,8 @@ Department of Computing & Mathematics, SETU Waterford
 - [Developer Events](#developer-events)
   - [Hacktoberfest 2022](#hacktoberfest-2022)
   - [GDG Glasgow 2022](#gdg-glasgow-2022)
-- [SvelteKit \& Skeleton](#sveltekit--skeleton)
+- [The Next Generation of Tutors](#the-next-generation-of-tutors)
+  - [SvelteKit \& Skeleton](#sveltekit--skeleton)
   - [SvelteKit](#sveltekit)
   - [An updated monorepo structure](#an-updated-monorepo-structure)
 - [State of the Art](#state-of-the-art)
@@ -163,6 +164,8 @@ The root of the monorepo would contain the following folders:
 
 This structure would allow us to create a monorepo which would be easy to navigate and would allow us to easily add new applications and components to the monorepo in the future. We wanted to get the monorepo up and running in a timely manner, to attract developers to the project during the Hacktoberfest 2022 event and to make sure that the monorepo was easy to navigate and understand for the new contributors that would come on board to the project.
 
+This monorepo structure was then added to a new repository on GitHub, [tutors-sdk/tutors](https://github.com/tutors-sdk/tutors), which was named to ensure the project was easily searchable on GitHub. To ensure it was easily identifiable as the main repository for the Tutors project, it was pinned to the top of the tutors-sdk profile.
+
 ## The Tutors Design System
 
 Alongside the monorepo, I decided to put time into building out a design system for the Tutors project. This was done to provide a consistent user experience across all of the Tutors applications and to make it easier for developers to contribute to the project. In order to fill out this package with components, I taken an [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) approach to the design system. This approach involved breaking down the design system into smaller components, which could then be combined to create more complex components. This approach allowed for a more modular design system, which can be easily extended and modified in the future.
@@ -170,9 +173,12 @@ Alongside the monorepo, I decided to put time into building out a design system 
 Initially, this was built in the `lib` folder of the course reader application, but later was formed into it's own package in the monorepo. This was done to make it easier for developers to access the design system, allowing multiple applications to use it's components, and to make it easier to maintain the design system in the future.
 
 # Developer Events
+
 ## Hacktoberfest 2022
 
 Come the end of September 2022, the Tutors repo was ready for participants to come on board during Hacktoberfest, an event which attracts and encourages developers to work on Open Source projects, with companies giving out free swag for participants. It was an ideal opportunity to get the word out about the Tutors project and to attract new contributors to the project. I worked with Eamonn to create a list of issues for contributors to work on during Hacktoberfest. These issues were a mix of bug fixes, feature requests and documentation improvements.
+
+As you can see [here](https://github.com/tutors-sdk/tutors/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-10-01..2022-10-31) 41 pull requests were merged during Hacktoberfest 2022, with 16 of these pull requests being raised by 6 new contributors to the project. This was a great success for the project and was a great opportunity to get the word out about the project and to attract new contributors to the project.
 
 ## GDG Glasgow 2022
 
@@ -180,9 +186,9 @@ While attending NodeConf EU 2022, I met Patty - one of the organisers of DevFest
 
 In preparation for this talk, I sat down with Eamonn and we discussed the format of the talk and how it would be delivered. We decided that the talk would be a 45 minute deep dive, with 10-15 minutes for questions at the end. We also decided that the talk would be delivered remotely, as I was unable to attend in person. The talk was delivered via livestream to the GDG Glasgow YouTube channel. The recording of the livestream from this talk can be found [here](https://www.youtube.com/watch?v=9j25w4Zrucg).
 
-November 2022 - talk about tutors at GDG Glasgow
+# The Next Generation of Tutors
 
-# SvelteKit & Skeleton
+## SvelteKit & Skeleton
 
 After the success we had during Hacktoberfest 2022, and with the looming new cohort of students coming in January to the HDip course, we decided to move ahead with building the next generation of Tutors. This was a complete rewrite of the Tutors project, using the latest technologies and best practices. The new version of Tutors was to be built using [SvelteKit](https://kit.svelte.dev/), a framework for building web applications using [Svelte](https://svelte.dev/), which is what the previous version of Tutors was built upon. This worked out very timely, as SvelteKit version 1.0 was released when we were starting to work on the new version of Tutors. This meant that we knew we were using a stable, production-ready and well supported framework for the new version of Tutors.
 

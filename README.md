@@ -38,6 +38,7 @@ Department of Computing & Mathematics, SETU Waterford
   - [SvelteKit](#sveltekit)
   - [Skeleton, Storybook \& tutors-ui components](#skeleton-storybook--tutors-ui-components)
   - [An updated monorepo structure](#an-updated-monorepo-structure)
+  - [Preparing for release](#preparing-for-release)
 - [State of the Art](#state-of-the-art)
 - [Tutors Architecture](#tutors-architecture)
 - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
@@ -221,6 +222,12 @@ In order to facilitate the new version of Tutors, we decided to update the struc
   - `tutors-lib` - the core library for the Tutors project
   - `tutors-reader-lib` - the core library for the Tutors Course Reader
   - `tutors-ui` - the design system for the Tutors project
+
+## Preparing for release
+
+Once we felt that the new version of tutors was almost ready for release, we decided to do a soft launch of the new version of Tutors. This was done by creating a new branch in the monorepo, which contained the new version of Tutors. We then created a new subdomain for the new version of Tutors, which was `alpha.tutors.dev`. This allowed us to test the new version of Tutors in a production environment, and for lecturers to get early access to the new version to ensure their courses would work seamlessly after the upgrade. A week later, another branch was created as a beta release, which was then deployed to the `beta.tutors.dev` subdomain. This allowed us to get more feedback from a wider audience on the new version of Tutors, being shared to the students on the HDip in Computer Science 2021 and 2022 cohorts, and to iron out any bugs that were found.
+
+Once we felt that the new version of Tutors was ready for release, we merged the beta branch into the main branch. This was a very exciting moment for the project, as we had put a lot of work into this release, which came with many exciting new features and upgrades, so it was great to see it finally released.
 
 # State of the Art
 

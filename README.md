@@ -39,8 +39,11 @@ Department of Computing & Mathematics, SETU Waterford
     - [Skeleton, Storybook \& tutors-ui components](#skeleton-storybook--tutors-ui-components)
     - [An updated monorepo structure](#an-updated-monorepo-structure)
     - [Preparing for release](#preparing-for-release)
-  - [State of the Art](#state-of-the-art)
   - [Tutors Architecture](#tutors-architecture)
+    - [Under the hood](#under-the-hood)
+    - [Tutors Course Reader](#tutors-course-reader)
+    - [Tutors Reader Lib](#tutors-reader-lib)
+  - [State of the Art](#state-of-the-art)
   - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
   - [Conclusion + Further work](#conclusion--further-work)
 
@@ -245,16 +248,30 @@ Once we felt that the new version ofthe tutors course reader was almost ready fo
 
 Once we felt that the new version of the Tutors course reader was ready for release, we merged the beta branch into the main branch. This was a very exciting moment for the project, as we had put a lot of work into this release, which came with many exciting new features and upgrades, so it was great to see it finally released.
 
+## Tutors Architecture
+
+### Under the hood
+
+The Tutors project is a monorepo, which contains all the code for the Tutors project. It is built using TurboRepo, which allows us to have a single repository for the Tutors project, which contains all the code for the project, and allows us to manage the dependencies of the project in a single place. It embraces the JAMStack architecture, which is a modern architecture for building web applications.
+
+All Tutors applications are built on top of [NodeJS](https://nodejs.org/en/), a cross-platform JavaScript runtime environment, and are written in [TypeScript](https://www.typescriptlang.org/), a typed superset of JavaScript that compiles to plain JavaScript. The advantage of using TypeScript is that it allows us to write code in a typed manner, which allows us to catch errors at compile time, rather than at runtime. This is especially useful when working with a large codebase, as it allows us to catch errors early on, and to ensure that the code is well structured and easy to read.
+
+Tutors' web applications are built with [SvelteKit](https://kit.svelte.dev/), a framework which is built on top of Svelte. The user interfaces are built using [Skeleton](https://skeleton.dev), a UI library built specifically for SvelteKit which is built on top of [TailwindCSS](https://tailwindcss.com/). Firebase Realtime Database is for data storage, Auth0 for authentication, GitHub for code storage, and Netlify for hosting.
+
+### Tutors Course Reader
+
+The Tutors Course Reader is the main front end application of the Tutors project. It is a web application which consumes the JSON output of the tutors-json package (usually hosted on Netlify) and renders a course for student consumption. It is built using SvelteKit, and relies on 2 components, `tutors-ui` and `tutors-reader-lib`. `tutors-ui` is the design system which contains all the UI components responsible for rendering the core elements of the reader. `tutors-reader-lib` is a Typescript library which contains all the logic for the Tutors Course Reader, and is responsible for loading the course from the remote server, long with starting up and driving the metrics & presence models which are used to track student progress & show online status.
+
+### Tutors Reader Lib
+
+The `tutors-reader-lib` package is where a lot of the 'heavy lifting' is done in downloading the course from the remote service & building up, within the browser, an in-memory model of the course. There is course, lab & topic models, services for analytics, authentication, course, metrics & presence, a stores for the course & some types for authentication, icons, lo (learning objects), metrics & stores.
+
 ## State of the Art
 
 UX Design Systems & CSS Frameworks
 Front End Frameworks
 Build Systems
 Open Source Patterns & infrastructure
-
-## Tutors Architecture
-
-Articulate the core of the system as presented on the Slides
 
 ## The Tutors Open Source Infrastructure
 

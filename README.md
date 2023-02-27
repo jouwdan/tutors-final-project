@@ -43,6 +43,7 @@ Department of Computing & Mathematics, SETU Waterford
     - [Under the hood](#under-the-hood)
     - [Tutors Course Reader](#tutors-course-reader)
     - [Tutors Reader Lib](#tutors-reader-lib)
+    - [Tutors UI](#tutors-ui)
   - [State of the Art](#state-of-the-art)
   - [The Tutors Open Source Infrastructure](#the-tutors-open-source-infrastructure)
   - [Conclusion + Further work](#conclusion--further-work)
@@ -265,6 +266,10 @@ The Tutors Course Reader is the main front end application of the Tutors project
 ### Tutors Reader Lib
 
 The `tutors-reader-lib` package is where a lot of the 'heavy lifting' is done in downloading the course from the remote service & building up, within the browser, an in-memory model of the course. There is course, lab & topic models, services for analytics, authentication, course, metrics & presence, a stores for the course & some types for authentication, icons, lo (learning objects), metrics & stores.
+
+### Tutors UI
+
+The `tutors-ui` package is the design system for the Tutors project. It is built on top of Skeleton, a UI library built specifically for SvelteKit. Skeleton is based on TailwindCSS, and provides a lot of components, utilities & stores which we use to build out the Tutors Course Reader. It also provides a lot of flexibility in terms of how the application is structured, allowing for a lot of customisation.
 
 ## State of the Art
 

@@ -18,6 +18,11 @@ Department of Computing & Mathematics, SETU Waterford
     - [Motivation](#motivation)
   - [Educational Technology (EdTech)](#educational-technology-edtech)
   - [State of the art](#state-of-the-art)
+    - [NodeJS \& TypeScript](#nodejs--typescript)
+    - [Frontend Frameworks](#frontend-frameworks)
+    - [CSS Frameworks \& UI Libraries](#css-frameworks--ui-libraries)
+    - [Build Systems](#build-systems)
+    - [Monorepos](#monorepos)
   - [Architecture](#architecture)
     - [Under the hood](#under-the-hood)
     - [Tutors Course Reader](#tutors-course-reader)
@@ -83,7 +88,37 @@ While MOOCs and tutorial sites may offer courses on specific topics, VLEs can pr
 
 ## State of the art
 
-// Todo, write about sveltekit/skeleton/monorepos/UX Design Systems & CSS Frameworks/Front End Frameworks/Build Systems/Open Source Patterns & infrastructure. Write this as an abstract/in general, not related to Tutors.
+The latest web technologies has transformed the way we build web applications, providing developers with powerful tools to create fast and reliable web applications. In this section we are going to be looking into the technologies that has been implemented in Tutors and how they compare to older technologies.
+
+### NodeJS & TypeScript
+
+NodeJS is an open-source, cross-platform, JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. NodeJS is built on the V8 JavaScript engine, the same engine used by Google Chrome, and provides developers with access to a rich set of libraries and modules that allow for the creation of server-side applications. It has a non-blocking I/O model, which means that it can handle multiple requests simultaneously, making it an ideal choice for building scalable and high-performance applications.
+
+TypeScript is a superset of JavaScript that adds optional static typing and other advanced features to the language. TypeScript is fully compatible with NodeJS and provides several benefits over traditional JavaScript. It has excellent interoperability with existing JavaScript code, allowing developers to gradually adopt TypeScript without rewriting their entire codebase. TypeScript enables developers to catch errors early in the development process, reducing the likelihood of bugs and errors in production. This is because TypeScript checks types at compile time, providing early feedback on any type mismatches. It also provides developers with better tooling and IDE support, making it easier to navigate and maintain larger codebases.
+
+NodeJS is a powerful JavaScript runtime environment that allows developers to build high-performance applications. TypeScript provides advanced features like optional static typing and better tooling, which improve the development experience and reduces the likelihood of bugs and errors in production. By using NodeJS with TypeScript, developers can take advantage of the benefits of both technologies, creating scalable, high-performance, and maintainable applications.
+
+### Frontend Frameworks
+
+Frontend frameworks are a collection of libraries and tools that allow developers to build web applications. They allow developers to build web applications quickly and efficiently, allowing them to focus on the core functionality of their application. Some of the most popular frontend frameworks include React, Vue, Svelte and Angular. Each framework has its own set of features and benefits, but they all share a common goal - to make it easier for developers to build web applications.
+
+SvelteKit, a relatively new framework based on Svelte, has gained popularity due to its lightweight, fast, and flexible nature, making it an excellent choice for building modern web applications. It is built on top of the Svelte compiler, which allows developers to build web applications using a component-based approach. SvelteKit also provides a number of features that make it easier to build web applications, including a router, a store, and a server-side rendering engine. Unlike React, Vue and other frameworks, SvelteKit compiles components during build time, which reduces the size of the final bundle and improves application performance, along with eliminating the need for virtual DOM, resulting in a faster and more efficient runtime. Additionally, SvelteKit is easy to learn and use, providing developers with a simple and intuitive syntax that requires less boilerplate code.
+
+### CSS Frameworks & UI Libraries
+
+A CSS framework is a pre-designed set of CSS styles and rules that help developers build responsive and visually appealing user interfaces quickly. These frameworks provide a collection of CSS classes that define common UI elements like buttons, forms, and layouts. By using a CSS framework, developers can save time and effort by not having to create styles from scratch. Some of the most popular CSS frameworks include Bootstrap, Tailwind CSS, and Bulma.
+
+Tailwind CSS is a framework that provides developers with a utility-first approach to styling web applications. This means that instead of using predefined CSS classes, developers can use a set of utility classes to create responsive and customizable user interfaces quickly. Tailwind CSS comes with a learning curve compared to typical CSS frameworks, but it provides massive set of pre-defined classes that cover everything from layout and typography to color and spacing. This approach not only speeds up the development process but also allows developers to create consistent and visually appealing user interfaces with ease. Additionally, Tailwind CSS is highly customizable, allowing developers to create their own utility classes and adjust the default settings to fit their specific needs.
+
+Skeleton is a UI library that provides developers with a collection of pre-designed components that can be used to build web applications. It is built specifically for SvelteKit projects and is built on top of Tailwind CSS, which means that it provides developers with a consistent yet customizable user interface. Skeleton is a great choice for developers who want to build web applications quickly and efficiently, as it provides a collection of pre-designed and functional components.
+
+### Build Systems
+
+Build systems play a vital role in modern web development, allowing developers to compile, bundle, and optimize their code for production. One popular build system, Webpack, has been the go-to tool for many years and has been pre-bundled with most modern frontend frameworks. However, Vite has emerged as has objectively became a better option due to its faster build times and improved development experience. Vite takes advantage of modern browser features like ES modules and lazy-loading to improve build times significantly. This means that instead of bundling all code upfront, Vite can compile and load code on the fly as it's needed, reducing build times and improving development workflow. Additionally, Vite provides a better development experience with features like hot module replacement, which allows developers to see changes to their code in real-time without reloading the page.
+
+### Monorepos
+
+Monorepos are a more recent approach to managing codebases that contain multiple projects or applications. Instead of having separate repositories for each project (polyrepos), a monorepo houses all the projects in one, structured repository. This approach offers several advantages over polyrepos, including better code sharing, improved code quality and streamlined development workflows. With a monorepo, developers can share code between projects more easily, reducing the need for duplicate code, improving code reuse and promoting better code quality, as developers can maintain a single codebase with consistent coding standards and practices. A monorepo simplifies the development workflow by allowing developers to manage multiple projects with a single set of tools and processes, and allows for easier management of dependencies, as developers can manage dependencies for all projects in a single place.
 
 ## Architecture
 

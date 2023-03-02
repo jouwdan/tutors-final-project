@@ -35,8 +35,8 @@ Department of Computing & Mathematics, SETU Waterford
         - [Meeting Red Hat](#meeting-red-hat)
     - [Project Implementation (August 2022 - March 2023)](#project-implementation-august-2022---march-2023)
       - [The Tutors Monorepo](#the-tutors-monorepo)
-      - [Turborepo](#turborepo)
-      - [Creating the Tutors Monorepo](#creating-the-tutors-monorepo)
+        - [Turborepo](#turborepo)
+        - [Creating the Tutors Monorepo](#creating-the-tutors-monorepo)
       - [The Tutors Design System](#the-tutors-design-system)
       - [Netlify Open Source License](#netlify-open-source-license)
       - [Developer Events](#developer-events)
@@ -192,11 +192,11 @@ Figure 10 - Red Hat Waterford office
 
 My next task was to create a monorepo for the Tutors project. This was done to create a single repository which developers can work in on all parts of the Tutors Open Source Project, instead of requiring them to pull multiple repositories to make changes. This provided a more streamlined development experience for contributors to the project. After a lot of research and consideration, I decided that the monorepo would be made using [Turborepo](https://turbo.build), a tool for managing monorepos.
 
-#### Turborepo
+##### Turborepo
 
 Turborepo is a tool for managing monorepos. It is a command line tool which allows developers to create a monorepo using a single command. The reason I decided to proceed with Turborepo over other monorepo tools such as [Lerna](https://lerna.js.org/) and [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) is that is is built by a well-backed company (Vercel) and is actively maintained. It is very well documented and provides a lot of features out of the box, such as the ability to run scripts across multiple packages in the monorepo, and the ability to run scripts in parallel. It also provides a lot of flexibility in terms of how the monorepo is structured, which allowed be to to create a monorepo which suited the Tutors Project's needs.
 
-#### Creating the Tutors Monorepo
+##### Creating the Tutors Monorepo
 
 Before starting to create the monorepo, I had to decide on the structure of the monorepo. After considering this with Eamonn, we decided to structure the monorepo in the following way:
 

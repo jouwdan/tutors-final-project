@@ -73,7 +73,13 @@ In the first semester of my studies, I became a frequent user of Tutors, an educ
 
 ## Educational Technology (EdTech)
 
-// Todo, write about edtech/online learning/language of Higher Education vs tutorials such as udemy/fronend masters, values of tutors...
+In recent years, the rapid advancement of technology has transformed the way we teach and learn. Educational technology, or edtech, has become an increasingly popular tool in classrooms worldwide, as it provides a more interactive and engaging learning experience for students. One of the most widely used edtech tools is the Virtual Learning Environment (VLE), which allows educators to deliver educational content online. Moodle, an open-source VLE, has gained popularity due to its customizable and user-friendly nature, making it an exemplar of the power and potential of edtech.
+
+It's worth noting that there are other online learning platforms that differ from it in some significant ways. Massive Open Online Courses (MOOCs), such as edX and Coursera, are designed to offer free or low-cost online courses to a vast audience of learners worldwide. On the other hand, online environments like Udemy are more geared towards commercial offerings, with instructors creating and selling courses to students. While these platforms can be a great way to learn new skills or gain knowledge, they lack the level of customization and personalization offered by a VLE.
+
+VLEs allows educators to tailor the learning experience to their students' needs and provides a collaborative learning environment that promotes student engagement and interactivity. They offer more opportunities for collaboration and communication between students and instructors - through features like forums, messaging, and video conferencing, students can interact with their peers and teachers, fostering a sense of community and creating a more social learning environment. They also allow students to access educational content at their own pace, allowing them to learn at their own pace and in their own time.
+
+While MOOCs and tutorial sites may offer courses on specific topics, VLEs can provide a complete education experience with integrated courses, assessments, and support systems. Overall, VLEs are a great way to provide a more engaging and interactive learning experience for students, and they are becoming increasingly popular in classrooms worldwide.
 
 ## State of the art
 

@@ -29,21 +29,23 @@ Department of Computing & Mathematics, SETU Waterford
     - [Tutors Reader Lib](#tutors-reader-lib)
     - [Tutors UI](#tutors-ui)
   - [Implementation](#implementation)
-    - [Pre-Project (Early 2021 - August 2022)](#pre-project-early-2021---august-2022)
+    - [Phase 1 (June 2021 - August 2021)](#phase-1-june-2021---august-2021)
       - [Initial Technologies \& User Experience](#initial-technologies--user-experience)
       - [Initial Setup \& Research](#initial-setup--research)
       - [Implementing DaisyUI](#implementing-daisyui)
+    - [Phase 2 (August 2021 - April 2022)](#phase-2-august-2021---april-2022)
       - [Tutors Tech Team](#tutors-tech-team)
         - [Red Hat Onboarding](#red-hat-onboarding)
         - [Working with the Tutors Tech Team](#working-with-the-tutors-tech-team)
         - [A new Tutors domain \& branding](#a-new-tutors-domain--branding)
         - [Meeting Red Hat](#meeting-red-hat)
-    - [Project Implementation (August 2022 - March 2023)](#project-implementation-august-2022---march-2023)
+    - [Phase 3 (April 2022 - August 2022)](#phase-3-april-2022---august-2022)
       - [The Tutors Monorepo](#the-tutors-monorepo)
         - [Turborepo](#turborepo)
         - [Creating the Tutors Monorepo](#creating-the-tutors-monorepo)
       - [The Tutors Design System](#the-tutors-design-system)
       - [Netlify Open Source License](#netlify-open-source-license)
+    - [Phase 4 (August 2022 - March 2023)](#phase-4-august-2022---march-2023)
       - [Developer Events](#developer-events)
         - [Hacktoberfest 2022](#hacktoberfest-2022)
         - [GDG Glasgow 2022](#gdg-glasgow-2022)
@@ -65,12 +67,12 @@ In the summer of 2021, on the 3rd of June, I approached Eamonn De Leastar, a SET
 
 ### Objectives
 
-My objectives for this project were as follows:
+My objectives for this project was to improve these 4 core areas of the Tutors project:
 
-1. Create a more engaging learner experience, with a fresh, modern interface & improved user experience.
-2. Improve the developer experience by creating a monorepo and tidying up the codebase.
-3. Open up the project to contributions from the open source developer community.
-4. Bring exposure to the Tutors Open Source Project by presenting it to a wider audience.
+1. Create a more engaging learner experience, by improving the user experience and creating a fresh, modern interface that works well on all devices.
+2. Work alongside the Tutors Tech Team to improve accessibility in Tutors, creating a more inclusive learning experience, and building a brand for the project.
+3. Improve the developer experience by tidying up the codebase and converting the polyrepos into a single monorepo.
+4. Open up the project to contributions from the open source developer community & bring exposure to the Tutors Open Source Project by presenting it to a wider audience.
 
 ### Motivation
 
@@ -146,7 +148,7 @@ The `tutors-ui` package is the design system for the Tutors project. It is built
 
 ## Implementation
 
-### Pre-Project (Early 2021 - August 2022)
+### Phase 1 (June 2021 - August 2021)
 
 #### Initial Technologies & User Experience
 
@@ -190,6 +192,8 @@ Figure 6 - Mid work in progress implementing DaisyUI in Tutors
 
 Figure 7 - Late work in progress implementing DaisyUI in Tutors
 
+### Phase 2 (August 2021 - April 2022)
+
 #### Tutors Tech Team
 
 ##### Red Hat Onboarding
@@ -227,7 +231,7 @@ In April 2022 I had the opportunity to visit the Red Hat office in Waterford to 
 
 Figure 10 - Red Hat Waterford office
 
-### Project Implementation (August 2022 - March 2023)
+### Phase 3 (April 2022 - August 2022)
 
 #### The Tutors Monorepo
 
@@ -268,6 +272,8 @@ In order to prepare Tutors for the Netlify Open Source License, I worked on the 
 - Ensure the license for the project was included in the repository
 - Add the netlify logo to the footer of the Tutors website
 - Add the netlify badge to the README of the Tutors repository
+
+### Phase 4 (August 2022 - March 2023)
 
 #### Developer Events
 

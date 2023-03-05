@@ -67,7 +67,7 @@ In the summer of 2021, on the 3rd of June, I approached Eamonn De Leastar, a SET
 
 ### Objectives
 
-My objectives for this project was to improve these 4 core areas of the Tutors project:
+My objectives for this project was to improve these 4 core areas of the Tutors project, which can be summarized into distinct phases:
 
 1. Create a more engaging learner experience, by improving the user experience and creating a fresh, modern interface that works well on all devices.
 2. Work alongside the Tutors Tech Team to improve accessibility in Tutors, creating a more inclusive learning experience, and building a brand for the project.

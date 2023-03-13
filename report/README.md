@@ -55,9 +55,11 @@ Department of Computing & Mathematics, SETU Waterford
         - [Skeleton, Storybook \& tutors-ui components](#skeleton-storybook--tutors-ui-components)
         - [An updated monorepo structure](#an-updated-monorepo-structure)
         - [Preparing for release](#preparing-for-release)
+        - [Release Automation](#release-automation)
       - [Holopin](#holopin)
         - [Creating the badges](#creating-the-badges)
   - [Conclusion + Further work](#conclusion--further-work)
+    - [Reflection](#reflection)
 
 ## Introduction
 
@@ -237,11 +239,11 @@ Figure 10 - Red Hat Waterford office
 
 #### The Tutors Monorepo
 
-My next task was to create a monorepo for the Tutors project. This was done to create a single repository which developers can work in on all parts of the Tutors Open Source Project, instead of requiring them to pull multiple repositories to make changes. This provided a more streamlined development experience for contributors to the project. After a lot of research and consideration, I decided that the monorepo would be made using [Turborepo](https://turbo.build), a tool for managing monorepos.
+The first task for phase 3 was to build out a monorepo for the Tutors project. This was done to create a single repository which developers can work in on all parts of the Tutors Open Source Project, instead of requiring them to pull multiple repositories to make changes. This provided a more streamlined development experience for contributors to the project. After a lot of research and consideration, I decided that the monorepo would be made using [Turborepo](https://turbo.build).
 
 ##### Turborepo
 
-Turborepo is a tool for managing monorepos. It is a command line tool which allows developers to create a monorepo using a single command. The reason I decided to proceed with Turborepo over other monorepo tools such as [Lerna](https://lerna.js.org/) and [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) is that is is built by a well-backed company (Vercel) and is actively maintained. It is very well documented and provides a lot of features out of the box, such as the ability to run scripts across multiple packages in the monorepo, and the ability to run scripts in parallel. It also provides a lot of flexibility in terms of how the monorepo is structured, which allowed be to to create a monorepo which suited the Tutors Project's needs.
+Turborepo is a tool for managing monorepos. It is a command line tool which allows developers to create a monorepo using a single command. The reason I decided to proceed with Turborepo over other monorepo tools such as [Lerna](https://lerna.js.org/) and [Yarn Workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) is that is is built by a well-backed company (Vercel) and is actively maintained. It is very well documented and provides a lot of features out of the box, such as the ability to run scripts across multiple packages in the monorepo, and the ability to run scripts in parallel. It also provides a lot of flexibility in terms of how the monorepo is structured, which allowed me to create a monorepo which suited the Tutors Project's needs.
 
 ##### Creating the Tutors Monorepo
 
@@ -336,6 +338,12 @@ Once we felt that the new version ofthe tutors course reader was almost ready fo
 
 Once we felt that the new version of the Tutors course reader was ready for release, we merged the beta branch into the main branch. This was a very exciting moment for the project, as we had put a lot of work into this release, which came with many exciting new features and upgrades, so it was great to see it finally released.
 
+##### Release Automation
+
+When we released the new version of Tutors, I decided to automate the release process as much as possible. This was done using Netlify automation, which allowed me to automatically deploy all applications of the monorepo to their own subdomain. This was done by creating a new Netlify site, which was connected to the main branch of the monorepo. This allowed me to automatically deploy a new version whenever a new commit was pushed to the main branch of the monorepo.
+
+In order to prevent any accidental deployments, I changed the default branch on the github repo to the 'development' branch, along with protecting both the main and development branches from deployments. I set this up for pull requests to require an approval from a maintainer (Eamonn or myself) before it could be merged. The development branch is then used as a beta-like branch, allowing us to test new versions of Tutors in a production-like environment before merging into 'main'/production.
+
 #### Holopin
 
 In March 2022 I applied to Holopin's open source program, which would allow us to assign a digital badge to developers who contribute to the Tutors project. We were accepted into the program and I set up an account for the Tutors project. I then set about creating the badges for the Tutors project, which were to be awarded to contributors who had contributed to the project.
@@ -355,3 +363,11 @@ For this, we needed more than AI to come up with ideas. I took to Fiverr to find
 ![Oscar the Owl](// TODO)
 
 ## Conclusion + Further work
+
+### Reflection
+
+Looking back on the time that I have spent working on Tutors, I am very happy with the work that I have done. I have learned a lot about the Tutors project, and many things about third level course delivery, and believe that I have been able to contribute to the project in a meaningful and impactful way. I have also learned a lot about - and gained an appreciation for - the open source community, and the work that goes into maintaining an open source project.
+
+I have learned a lot about the tools that I have used to work on the Tutors project, and have been able to use the project to learn more about many different technologies and areas of software development. I have also learned a lot about the software development process, and how to work on a project with others.
+
+The area that I am most proud to have worked on is the improvement on the developer experience. Although I really enjoy frontend development and improving the experience for the learner, I have thoroughly enjoyed learning how to improve the experience for developers on a project. I honestly believe this is the most impactful change that I have made - setting up the monorepo, opening the project up to hacktoberfest contributions, setting up holopin to 'gameify' the contribution process and reward contributors has truly opened up the project to onboard new contributors much more easily, and has allowed current contributors to work on the project much more efficiently.

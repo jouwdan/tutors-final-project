@@ -55,6 +55,8 @@ Department of Computing & Mathematics, SETU Waterford
         - [Skeleton, Storybook \& tutors-ui components](#skeleton-storybook--tutors-ui-components)
         - [An updated monorepo structure](#an-updated-monorepo-structure)
         - [Preparing for release](#preparing-for-release)
+      - [Holopin](#holopin)
+        - [Creating the badges](#creating-the-badges)
   - [Conclusion + Further work](#conclusion--further-work)
 
 ## Introduction
@@ -333,5 +335,23 @@ In order to facilitate the new version of Tutors, we decided to update the struc
 Once we felt that the new version ofthe tutors course reader was almost ready for release, we decided to do a soft launch. This was done by creating a new branch in the monorepo,along with a new subdomain, which was `alpha.tutors.dev`. This allowed us to test the new version of the Tutors course reader in a production environment, and for lecturers to get early access to the new version to ensure their courses would work seamlessly after the upgrade. A week later, another branch was created as a beta release, which was then deployed to the `beta.tutors.dev` subdomain. This allowed us to get more feedback from a wider audience on the new version of Tutors, being shared to the students on the HDip in Computer Science 2021 and 2022 cohorts, and to iron out any bugs that were found.
 
 Once we felt that the new version of the Tutors course reader was ready for release, we merged the beta branch into the main branch. This was a very exciting moment for the project, as we had put a lot of work into this release, which came with many exciting new features and upgrades, so it was great to see it finally released.
+
+#### Holopin
+
+In March 2022 I applied to Holopin's open source program, which would allow us to assign a digital badge to developers who contribute to the Tutors project. We were accepted into the program and I set up an account for the Tutors project. I then set about creating the badges for the Tutors project, which were to be awarded to contributors who had contributed to the project.
+
+##### Creating the badges
+
+To make the badges more fun, I decided to create a mascot for the Tutors project. I came up with 'Oscar the Owl' as the mascot. I then, to come up with ideas, decided to use DALL-E, an AI text prompt to image generator, to generate some ideas for the mascot design.
+
+After multiple iterations, I came up with the following design for Oscar the Owl, the first badge for the Tutors project:
+
+![Oscar the Owl](// TODO)
+
+After creating this badge, I assigned it to those who had contributed to the Tutors project in the past. This was when I came across Holpin's evolving badges feature. This allowed me to create a badge which would 'evolve' alongside the number of contributions a person makes to the Tutors project. This was a great feature, as it allows us to reward those who contribute more than once to the Tutors project.
+
+For this, we needed more than AI to come up with ideas. I took to Fiverr to find a designer who could help me create the evolving badges. I found a designer who was able to create the badges for me, and I was very happy with the results.
+
+![Oscar the Owl](// TODO)
 
 ## Conclusion + Further work

@@ -342,7 +342,7 @@ Once we felt that the new version of the Tutors course reader was ready for rele
 
 When we released the new version of Tutors, I decided to automate the release process as much as possible. This was done using Netlify automation, which allowed me to automatically deploy all applications of the monorepo to their own subdomain. This was done by creating a new Netlify site, which was connected to the main branch of the monorepo. This allowed me to automatically deploy a new version whenever a new commit was pushed to the main branch of the monorepo.
 
-In order to prevent any accidental deployments, I changed the default branch on the github repo to the 'development' branch, along with protecting both the main and development branches from deployments. I set this up for pull requests to require an approval from a maintainer (Eamonn or myself) before it could be merged. The development branch is then used as a beta-like branch, allowing us to test new versions of Tutors in a production-like environment before merging into 'main'/production.
+In order to prevent any accidental deployments, I changed the default branch on the github repo to the 'development' branch, along with protecting both the main and development branches from deployments. I set this up for pull requests to require an approval from a maintainer (Eamonn or myself) before it could be merged. The development branch is then used as a beta-like branch, allowing us to test new versions of Tutors in a production-like environment before merging into the 'main' branch / production.
 
 #### Holopin
 

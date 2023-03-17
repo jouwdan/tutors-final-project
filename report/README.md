@@ -57,9 +57,14 @@ Department of Computing & Mathematics, SETU Waterford
         - [Preparing for release](#preparing-for-release)
         - [Release Automation](#release-automation)
       - [Holopin](#holopin)
-        - [Creating the badges](#creating-the-badges)
+        - [Oscar the Owl](#oscar-the-owl)
+        - [Evolving badges](#evolving-badges)
   - [Conclusion + Further work](#conclusion--further-work)
     - [Reflection](#reflection)
+      - [What I have learned](#what-i-have-learned)
+      - [What I would do differently](#what-i-would-do-differently)
+      - [Problems encountered](#problems-encountered)
+      - [Future contributions / Further Work](#future-contributions--further-work)
 
 ## Introduction
 
@@ -334,7 +339,7 @@ In order to facilitate the new version of Tutors, we decided to update the struc
 
 ##### Preparing for release
 
-Once we felt that the new version ofthe tutors course reader was almost ready for release, we decided to do a soft launch. This was done by creating a new branch in the monorepo,along with a new subdomain, which was `alpha.tutors.dev`. This allowed us to test the new version of the Tutors course reader in a production environment, and for lecturers to get early access to the new version to ensure their courses would work seamlessly after the upgrade. A week later, another branch was created as a beta release, which was then deployed to the `beta.tutors.dev` subdomain. This allowed us to get more feedback from a wider audience on the new version of Tutors, being shared to the students on the HDip in Computer Science 2021 and 2022 cohorts, and to iron out any bugs that were found.
+Once we felt that the new version of the tutors course reader was almost ready for release, we decided to do a soft launch. This was done by creating a new branch in the monorepo,along with a new subdomain, which was `alpha.tutors.dev`. This allowed us to test the new version of the Tutors course reader in a production environment, and for lecturers to get early access to the new version to ensure their courses would work seamlessly after the upgrade. A week later, another branch was created as a beta release, which was then deployed to the `beta.tutors.dev` subdomain. This allowed us to get more feedback from a wider audience on the new version of Tutors, being shared to the students on the HDip in Computer Science 2021 and 2022 cohorts, and to iron out any bugs that were found.
 
 Once we felt that the new version of the Tutors course reader was ready for release, we merged the beta branch into the main branch. This was a very exciting moment for the project, as we had put a lot of work into this release, which came with many exciting new features and upgrades, so it was great to see it finally released.
 
@@ -348,26 +353,54 @@ In order to prevent any accidental deployments, I changed the default branch on 
 
 In March 2022 I applied to Holopin's open source program, which would allow us to assign a digital badge to developers who contribute to the Tutors project. We were accepted into the program and I set up an account for the Tutors project. I then set about creating the badges for the Tutors project, which were to be awarded to contributors who had contributed to the project.
 
-##### Creating the badges
+##### Oscar the Owl
 
-To make the badges more fun, I decided to create a mascot for the Tutors project. I came up with 'Oscar the Owl' as the mascot. I then, to come up with ideas, decided to use DALL-E, an AI text prompt to image generator, to generate some ideas for the mascot design.
+To make the badges more fun, I decided to create a mascot for the Tutors project. I came up with 'Oscar the Owl' as the mascot, due to owls being regarded as wise in many stories and myths. I then, to come up with ideas, decided to use DALL-E, an AI text prompt to image generator, to generate some ideas for the mascot design.
 
-After multiple iterations, I came up with the following design for Oscar the Owl, the first badge for the Tutors project:
+After multiple iterations using AI for generation, I came up with the following design for Oscar the Owl, the first badge for the Tutors project:
 
-![Oscar the Owl](// TODO)
+![Oscar the Owl](images/oscar-v1.png)
 
-After creating this badge, I assigned it to those who had contributed to the Tutors project in the past. This was when I came across Holpin's evolving badges feature. This allowed me to create a badge which would 'evolve' alongside the number of contributions a person makes to the Tutors project. This was a great feature, as it allows us to reward those who contribute more than once to the Tutors project.
+##### Evolving badges
 
-For this, we needed more than AI to come up with ideas. I took to Fiverr to find a designer who could help me create the evolving badges. I found a designer who was able to create the badges for me, and I was very happy with the results.
+After creating this badge, I assigned it to those who had contributed to the Tutors project in the past, as a limited edition holopin. For an ongoing Holpin allocation, I decided it would be best to use Holopin's evolving badges feature. This allowed me to create a badge which would 'evolve' alongside the number of contributions a person makes to the Tutors project, providing a Tamagochi-like experience and gamifying contributions to the project. This is a great feature, as it allows us to reward those who contribute more than once to the Tutors project.
 
-![Oscar the Owl](// TODO)
+For this, I needed more than AI to come up with ideas. I took to Fiverr to find a designer who could help me create the evolving badges. I searched for designers with a style which appealed to be and I came across [KabilahStudio](https://www.fiverr.com/kabilahstudio). His art style was very appealing and after contacting him and discussing my requirements I hired him to design the evolving badges. I was very pleased with the final outcome of this.
+
+![Evolving badges for the Tutors project](images/evolving-badges.png)
+
+In order to set this up, I installed the holopin bot to the Tutors repo and created a holopin.yml file which contained the data of the holopin badges. Once this was created, the bot then automatically assigns holobytes which are earned to unlock the badges to contributors.
 
 ## Conclusion + Further work
 
 ### Reflection
+
+#### What I have learned
 
 Looking back on the time that I have spent working on Tutors, I am very happy with the work that I have done. I have learned a lot about the Tutors project, and many things about third level course delivery, and believe that I have been able to contribute to the project in a meaningful and impactful way. I have also learned a lot about - and gained an appreciation for - the open source community, and the work that goes into maintaining an open source project.
 
 I have learned a lot about the tools that I have used to work on the Tutors project, and have been able to use the project to learn more about many different technologies and areas of software development. I have also learned a lot about the software development process, and how to work on a project with others.
 
 The area that I am most proud to have worked on is the improvement on the developer experience. Although I really enjoy frontend development and improving the experience for the learner, I have thoroughly enjoyed learning how to improve the experience for developers on a project. I honestly believe this is the most impactful change that I have made - setting up the monorepo, opening the project up to hacktoberfest contributions, setting up holopin to 'gameify' the contribution process and reward contributors has truly opened up the project to onboard new contributors much more easily, and has allowed current contributors to work on the project much more efficiently.
+
+#### What I would do differently
+
+If I were to criticise my learning path, I would have looked into on the backend of the project at an earlier stage. I have enjoyed working on the frontend, and later the developer experience, of the project; but I feel that I could have learned a lot more about the project if I had worked on the backend and understood it more earlier on.
+
+I would also have liked to have put some time into talking to lecturers and students about Tutors, and how they use it. I feel that I could have provided a better experience for the users of Tutors if I had a better understanding of how they use it.
+
+#### Problems encountered
+
+The biggest problem that I encountered at the beginning was the lack of documentation for the project. I had to spend a lot of time reading the codebase to try to understand how it worked, and how to make changes to it. This was a very time consuming process, and I feel that it would have been much easier if there was more documentation. This was something that was improved shortly after I started working on the project, and I am very happy to see that there is now much more documentation for the project.
+
+When setting up the initial design changes with DaisyUI, as I was new to software development, I had trouble getting some functionality to work. I had to spend some time reading the documentation for DaisyUI and TailwindCSS to understand how to use them, and how to get the functionality that I wanted. If I did not understand it for a while, I was lucky enough to have Eamonn to contact to get the support I needed to get things working, such as the breadcrumb navigation.
+
+#### Future contributions / Further Work
+
+I intend to continue to contribute to the Tutors project in the future. I have really enjoyed working on the project, and I feel that I have been able to make a meaningful contribution to it.
+
+In order to formalise the work that needs to be done in the future, I have created a [GitHub Project](https://github.com/orgs/tutors-sdk/projects/1) for the Tutors project, which contains a 'backlog' / list of issues that need to be worked on. This backlog contains issues that I have identified as needing to be worked on, and I hope that it will be a useful resource for future contributors to the project. I intend to work on these issues in the future, and I plan to continue maintaining the project.
+
+Alongside this, I have set up [GitHub Issues](https://github.com/tutors-sdk/tutors/issues) which will allow lecturers and other users of the project to report bugs and issues that they encounter when using the project. This will allow us to improve the project and provide fixes for things that break, along with providing a way for users to request new features. It also gives open source contributors visibility on what needs to be worked on, and allows them to work on issues that they may be interested in to contribute to the project.
+
+In the long term, the main issue that I see needs to be worked on now is improving the educator experience. The current format of building courses via markdown files in a defined folder structure is not very user friendly, and I believe that it would be much better to have a web interface for educators to build courses. This would allow them to build courses much more easily, be more maintainable, and perhaps extend the current functionality much more than is currently there, such as quizzes and interactive content.

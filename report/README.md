@@ -361,6 +361,8 @@ After multiple iterations using AI for generation, I came up with the following 
 
 ![Oscar the Owl](images/oscar-v1.png)
 
+Figure 12 - Oscar the Owl
+
 ##### Evolving badges
 
 After creating this badge, I assigned it to those who had contributed to the Tutors project in the past, as a limited edition holopin. For an ongoing Holpin allocation, I decided it would be best to use Holopin's evolving badges feature. This allowed me to create a badge which would 'evolve' alongside the number of contributions a person makes to the Tutors project, providing a Tamagochi-like experience and gamifying contributions to the project. This is a great feature, as it allows us to reward those who contribute more than once to the Tutors project.
@@ -368,6 +370,8 @@ After creating this badge, I assigned it to those who had contributed to the Tut
 For this, I needed more than AI to come up with ideas. I took to Fiverr to find a designer who could help me create the evolving badges. I searched for designers with a style which appealed to be and I came across [KabilahStudio](https://www.fiverr.com/kabilahstudio). His art style was very appealing and after contacting him and discussing my requirements I hired him to design the evolving badges. I was very pleased with the final outcome of this.
 
 ![Evolving badges for the Tutors project](images/evolving-badges.png)
+
+Figure 13 - Evolving badges for the Tutors project
 
 In order to set this up, I installed the holopin bot to the Tutors repo and created a holopin.yml file which contained the data of the holopin badges. Once this was created, the bot then automatically assigns holobytes which are earned to unlock the badges to contributors.
 

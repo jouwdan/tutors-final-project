@@ -70,6 +70,7 @@ Department of Computing & Mathematics, SETU Waterford
       - [What I would do differently](#what-i-would-do-differently)
       - [Problems encountered](#problems-encountered)
       - [Future contributions / Further Work](#future-contributions--further-work)
+  - [References](#references)
 
 ## Introduction
 
@@ -442,3 +443,21 @@ In order to formalise the work that needs to be done in the future, I have creat
 Alongside this, I have set up [GitHub Issues](https://github.com/tutors-sdk/tutors/issues) which will allow lecturers and other users of the project to report bugs and issues that they encounter when using the project. This will allow us to improve the project and provide fixes for things that break, along with providing a way for users to request new features. It also gives open source contributors visibility on what needs to be worked on, and allows them to work on issues that they may be interested in to contribute to the project.
 
 In the long term, the main issue that I see needs to be worked on now is improving the educator experience. The current format of building courses via markdown files in a defined folder structure is not very user friendly, and I believe that it would be much better to have a web interface for educators to build courses. This would allow them to build courses much more easily, be more maintainable, and perhaps extend the current functionality much more than is currently there, such as quizzes and interactive content.
+
+## References
+
+GitHub.com help documentation, GitHub Docs. Available at: <https://docs.github.com/en> (Accessed: 2021-2023).
+
+Holopin documentation. Available at: <https://docs.holopin.com/> (Accessed: 2023).
+
+ICONIFY documentation. Available at: <https://docs.iconify.design/> (Accessed: 2021-2023).
+
+Monorepo Handbook – turborepo, Turbo, Available at: <https://turbo.build/repo/docs/handbook> (Accessed: 2022-2023).
+
+Start building - auth0 docs. Available at: <https://auth0.com/docs> (Accessed: 2022-2023).
+
+Svelte documentation, Svelte Docs. Available at: <https://svelte.dev/docs> (Accessed: 2021-2023).
+
+Tailwind CSS Components, daisyUI. Available at: <https://daisyui.com/> (Accessed: 2021-2022).
+
+Welcome to netlify, Netlify Docs. Available at: <https://docs.netlify.com/> (Accessed: 2021-2023).

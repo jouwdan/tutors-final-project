@@ -446,6 +446,8 @@ In the long term, the main issue that I see needs to be worked on now is improvi
 
 ## References
 
+Atomic design by Brad Frost. Available at: <https://atomicdesign.bradfrost.com/> (Accessed: 2022-2023).
+
 GitHub.com help documentation, GitHub Docs. Available at: <https://docs.github.com/en> (Accessed: 2021-2023).
 
 Holopin documentation. Available at: <https://docs.holopin.com/> (Accessed: 2023).

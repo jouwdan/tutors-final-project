@@ -1,3 +1,3 @@
 Repository
 
-TODO: Add a link to the repository
+The repo of the Tutors Open Source Project.

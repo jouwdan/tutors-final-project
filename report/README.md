@@ -464,4 +464,6 @@ Tailwind CSS Components, daisyUI. Available at: <https://daisyui.com/> (Accessed
 
 The starting point for learning typescript, TypeScript. Available at: <https://www.typescriptlang.org/docs/> (Accessed: 2021-2023).
 
+UI toolkit for svelte + tailwind, Skeleton. Available at: <https://www.skeleton.dev/> (Accessed: 2022-2023).
+
 Welcome to netlify, Netlify Docs. Available at: <https://docs.netlify.com/> (Accessed: 2021-2023).

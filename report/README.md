@@ -69,7 +69,7 @@ Department of Computing & Mathematics, SETU Waterford
       - [What I have learned](#what-i-have-learned)
       - [What I would do differently](#what-i-would-do-differently)
       - [Problems encountered](#problems-encountered)
-      - [Future contributions / Further Work](#future-contributions--further-work)
+    - [Future contributions / Further Work](#future-contributions--further-work)
   - [References](#references)
 
 ## Introduction
@@ -434,7 +434,7 @@ The biggest problem that I encountered at the beginning was the lack of document
 
 When setting up the initial design changes with DaisyUI, as I was new to software development, I had trouble getting some functionality to work. I had to spend some time reading the documentation for DaisyUI and TailwindCSS to understand how to use them, and how to get the functionality that I wanted. If I did not understand it for a while, I was lucky enough to have Eamonn to contact to get the support I needed to get things working, such as the breadcrumb navigation.
 
-#### Future contributions / Further Work
+### Future contributions / Further Work
 
 I intend to continue to contribute to the Tutors project in the future. I have really enjoyed working on the project, and I feel that I have been able to make a meaningful contribution to it.
 

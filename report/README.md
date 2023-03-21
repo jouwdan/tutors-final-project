@@ -29,9 +29,10 @@ Department of Computing & Mathematics, SETU Waterford
       - [Tutors Lib](#tutors-lib)
       - [Tutors JSON](#tutors-json)
       - [Tutors HTML](#tutors-html)
-    - [Tutors Course Reader](#tutors-course-reader)
-    - [Tutors Reader Lib](#tutors-reader-lib)
-    - [Tutors UI](#tutors-ui)
+    - [Course Reader](#course-reader)
+      - [Tutors Course Reader](#tutors-course-reader)
+      - [Tutors Reader Lib](#tutors-reader-lib)
+      - [Tutors UI](#tutors-ui)
   - [Implementation](#implementation)
     - [Phase 1 (June 2021 - August 2021)](#phase-1-june-2021---august-2021)
       - [Initial Technologies \& User Experience](#initial-technologies--user-experience)
@@ -172,17 +173,19 @@ Again, the HTML emitter emits courses, topics, learning objects, units etc using
 
 The html emitter is function complete, but doesn’t include a range of features that the course reader has such as authentication, presence, metrics & a more compelling UX overall. The tutors-html emitter is often looked at as an archive, whereas an educator provides a standalone version of the course content to the students at the end of a semester.
 
-### Tutors Course Reader
+### Course Reader
+
+#### Tutors Course Reader
 
 The Tutors Course Reader is the main front end application of the Tutors project. It is a web application which consumes the JSON output of the tutors-json package (usually hosted on Netlify) and renders a course for student consumption. It is built using SvelteKit, and relies on 2 components, `tutors-ui` and `tutors-reader-lib`. `tutors-ui` is the design system which contains all the UI components responsible for rendering the core elements of the reader. `tutors-reader-lib` is a Typescript library which contains all the logic for the Tutors Course Reader, and is responsible for loading the course from the remote server, long with starting up and driving the metrics & presence models which are used to track student progress & show online status.
 
-### Tutors Reader Lib
+#### Tutors Reader Lib
 
 The `tutors-reader-lib` package is where a lot of the 'heavy lifting' is done in downloading the course from the remote service & building up, within the browser, an in-memory model of the course. There is course, lab & topic models, services for analytics, authentication, course, metrics & presence, a stores for the course & some types for authentication, icons, lo (learning objects), metrics & stores.
 
 The models package has a slightly more sophisticated version of the (effective) abstract syntax tree that is equipped with some caching & indexing & also we need to ensure all elements are linkable, so it needs to generate URLs which can be shared. All of that simplifies the hydration. The services is about the ‘intelligence’ as we call it - reading and initialising each of the subsystems.
 
-### Tutors UI
+#### Tutors UI
 
 The `tutors-ui` package is the design system for the Tutors project. It is built on top of Skeleton, a UI library built specifically for SvelteKit. Skeleton is based on TailwindCSS, and provides a lot of components, utilities & stores which we use to build out the Tutors Course Reader. It also provides a lot of flexibility in terms of how the application is structured, allowing for a lot of customisation.
 

@@ -133,7 +133,9 @@ Monorepos are a more recent approach to managing codebases that contain multiple
 
 ## Architecture
 
-//Todo, write about pre-project vs post-project architecture.
+![Tutors Architecture](images/tutors-architecture.png)
+
+Figure 1 - Tutors Architecture
 
 ### Under the hood
 
@@ -165,11 +167,11 @@ The initial frontend of Tutors when I started the course was built with Aurelia 
 
 ![Tutors Aurelia](images/tutors-aurelia.png)
 
-Figure 1 - Tutors Aurelia
+Figure 2 - Tutors Aurelia
 
 ![Tutors Svelte](images/tutors-svelte.png)
 
-Figure 2 - Tutors Svelte
+Figure 3 - Tutors Svelte
 
 #### Initial Setup & Research
 
@@ -183,23 +185,23 @@ During the implementation of DaisyUI I experimented with the colour styles, impl
 
 ![Tutors wireframe with DaisyUI](images/tutors-daisyui-wireframe.png)
 
-Figure 3 - Tutors early wireframe with DaisyUI
+Figure 4 - Tutors early wireframe with DaisyUI
 
 ![Tutors mobile responsive wireframe with DaisyUI](images/tutors-daisyui-wireframe-mobile.png)
 
-Figure 4 - Tutors early wireframe - mobile responsiveness
+Figure 5 - Tutors early wireframe - mobile responsiveness
 
 ![Early work on progress of implementing DaisyUI in Tutors](images/tutors-daisyui-early-wip.png)
 
-Figure 5 - Early work in progress implementing DaisyUI in Tutors
+Figure 6 - Early work in progress implementing DaisyUI in Tutors
 
 ![Early work on progress of implementing DaisyUI in Tutors](images/tutors-daisyui-early-wip-2.png)
 
-Figure 6 - Mid work in progress implementing DaisyUI in Tutors
+Figure 7 - Mid work in progress implementing DaisyUI in Tutors
 
 ![Early work on progress of implementing DaisyUI in Tutors](images/tutors-daisyui-late-wip.png)
 
-Figure 7 - Late work in progress implementing DaisyUI in Tutors
+Figure 8 - Late work in progress implementing DaisyUI in Tutors
 
 ### Phase 2 (August 2021 - April 2022)
 
@@ -220,7 +222,7 @@ As part of the Tutors technical team, I worked on the following tasks:
 
 ![Preview of the initial implementation of presence](images/tutors-presence-initial.png)
 
-Figure 8 - Preview of the initial implementation of presence
+Figure 9 - Preview of the initial implementation of presence
 
 ##### A new Tutors domain & branding
 
@@ -230,7 +232,7 @@ I also worked on a rebrand of tutors with a new, custom logo I designed in Adobe
 
 ![Tutors logo](images/tutors-logo.png)
 
-Figure 9 - Tutors logo
+Figure 10 - Tutors logo
 
 ##### Meeting Red Hat
 
@@ -238,7 +240,7 @@ In April 2022 I had the opportunity to visit the Red Hat office in Waterford to 
 
 ![Red Hat Waterford office](images/red-hat-waterford-office.jpg)
 
-Figure 10 - Red Hat Waterford office
+Figure 11 - Red Hat Waterford office
 
 ### Phase 3 (April 2022 - August 2022)
 
@@ -294,7 +296,7 @@ As you can see [here](https://github.com/tutors-sdk/tutors/pulls?q=is%3Apr+is%3A
 
 ![GitHub Contributions](images/github-contributions.png)
 
-Figure 11 - GitHub Contributions around the time of Hacktoberfest 2022
+Figure 12 - GitHub Contributions around the time of Hacktoberfest 2022
 
 ##### GDG Glasgow 2022
 
@@ -361,7 +363,7 @@ After multiple iterations using AI for generation, I came up with the following 
 
 ![Oscar the Owl](images/oscar-v1.png)
 
-Figure 12 - Oscar the Owl
+Figure 13 - Oscar the Owl
 
 ##### Evolving badges
 
@@ -371,7 +373,7 @@ For this, I needed more than AI to come up with ideas. I took to Fiverr to find 
 
 ![Evolving badges for the Tutors project](images/evolving-badges.png)
 
-Figure 13 - Evolving badges for the Tutors project
+Figure 14 - Evolving badges for the Tutors project
 
 In order to set this up, I installed the holopin bot to the Tutors repo and created a holopin.yml file which contained the data of the holopin badges. Once this was created, the bot then automatically assigns holobytes which are earned to unlock the badges to contributors.
 

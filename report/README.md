@@ -25,6 +25,10 @@ Department of Computing & Mathematics, SETU Waterford
     - [Monorepos](#monorepos)
   - [Architecture](#architecture)
     - [Under the hood](#under-the-hood)
+    - [Tutors Generators](#tutors-generators)
+      - [Tutors Lib](#tutors-lib)
+      - [Tutors JSON](#tutors-json)
+      - [Tutors HTML](#tutors-html)
     - [Tutors Course Reader](#tutors-course-reader)
     - [Tutors Reader Lib](#tutors-reader-lib)
     - [Tutors UI](#tutors-ui)
@@ -145,6 +149,29 @@ All Tutors applications are built on top of [NodeJS](https://nodejs.org/en/), a 
 
 Tutors' web applications are built with [SvelteKit](https://kit.svelte.dev/), a framework which is built on top of Svelte. The user interfaces are built using [Skeleton](https://skeleton.dev), a UI library built specifically for SvelteKit which is built on top of [TailwindCSS](https://tailwindcss.com/). Firebase Realtime Database is for data storage, Auth0 for authentication, GitHub for code storage, and Netlify for hosting.
 
+### Tutors Generators
+
+#### Tutors Lib
+
+Tutors courses are built up by the tutors-lib parser as what is effectively an abstract syntax tree. It’s a bit like how a compiler works, but instead of compiling a single file of a formal language we are trying to compile an entire folder structure into an in-memory model.
+
+Courses are learning objects, a course contains topics - and these topics are also learning objects. Topics contain talks, videos, notes, archives & labs and A lab contains chapters. That’s the deep structure of the model that is developed & assembled in-memory by the tutors-lib library.
+
+#### Tutors JSON
+
+Tutors-json is the main, more complex course generator. It transforms the course by emitting a copy of all the assets, maintaining the same structure of the course, but encapsulating the deep structure of the course into the tutors.json file. That json file is effectively a serialised version of the structure of the course itself.
+
+The JSON emitter then is traversing the tree, emitting out into the JSON file all the learning objects it encounters - so the emitter structure is basically emitting course, topics, units, videos, archives & so on
+It’s a fairly short typescript library, around 150 lines or so, which traverses the entire tree & produces a representation in a single json file.
+
+#### Tutors HTML
+
+The static site generator then, tutors-html, implements a very similar structure as Tutors JSON. It takes the course and produces a same copy of all the assets, except this time each folder is decorated with html static versions of the course. Tutors HTML is a little more complex than Tutors JSON as far as structure goes, as it has to embody all the styles associated with each page. It uses the Nunjucks templating language & is currently using an old variety of styling from my initial updates on the course reader version, which uses Tailwind & the DaisyUI library.
+
+Again, the HTML emitter emits courses, topics, learning objects, units etc using the same syntax tree that the json emitter is using, except this time it generates much more content, as it has to generate the user experience as a static standalone site.
+
+The html emitter is function complete, but doesn’t include a range of features that the course reader has such as authentication, presence, metrics & a more compelling UX overall. The tutors-html emitter is often looked at as an archive, whereas an educator provides a standalone version of the course content to the students at the end of a semester.
+
 ### Tutors Course Reader
 
 The Tutors Course Reader is the main front end application of the Tutors project. It is a web application which consumes the JSON output of the tutors-json package (usually hosted on Netlify) and renders a course for student consumption. It is built using SvelteKit, and relies on 2 components, `tutors-ui` and `tutors-reader-lib`. `tutors-ui` is the design system which contains all the UI components responsible for rendering the core elements of the reader. `tutors-reader-lib` is a Typescript library which contains all the logic for the Tutors Course Reader, and is responsible for loading the course from the remote server, long with starting up and driving the metrics & presence models which are used to track student progress & show online status.
@@ -152,6 +179,8 @@ The Tutors Course Reader is the main front end application of the Tutors project
 ### Tutors Reader Lib
 
 The `tutors-reader-lib` package is where a lot of the 'heavy lifting' is done in downloading the course from the remote service & building up, within the browser, an in-memory model of the course. There is course, lab & topic models, services for analytics, authentication, course, metrics & presence, a stores for the course & some types for authentication, icons, lo (learning objects), metrics & stores.
+
+The models package has a slightly more sophisticated version of the (effective) abstract syntax tree that is equipped with some caching & indexing & also we need to ensure all elements are linkable, so it needs to generate URLs which can be shared. All of that simplifies the hydration. The services is about the ‘intelligence’ as we call it - reading and initialising each of the subsystems.
 
 ### Tutors UI
 
